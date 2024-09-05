@@ -1,8 +1,8 @@
 import "./App.css";
-import Hero from "./components/Home/Hero";
+import MainRoutes from "./routes/MainRoutes";
 
 function App() {
-  return <Hero />;
+  return <MainRoutes />;
 }
 
 export default App;
