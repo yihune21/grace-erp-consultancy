@@ -18,27 +18,16 @@ const navigation = [
     hasDropdown: true,
     dropdownItems: [
       {
-        name: "End to end ERP system implementation",
+        name: "ERP implementation",
         href: "#erp-implementation",
       },
-      { name: "ERP SaaS service", href: "#erp-saas" },
+      { name: "SaaS service", href: "/SaaS-service" },
       { name: "Odoo Training Programs", href: "#odoo-training" },
-    ],
-  },
-  {
-    name: "SaaS service",
-    href: "#",
-    current: false,
-    hasDropdown: true,
-    dropdownItems: [
-      { name: "About Odoo SaaS", href: "#about-odoo-saas" },
-      { name: "SaaS industries", href: "#saas-industries" },
-      { name: "SaaS Modality and pricing", href: "#saas-pricing" },
     ],
   },
   { name: "Expertise", href: "/expertise", current: false },
   { name: "Happy clients", href: "/happy-clients", current: false },
-  { name: "Contact us", href: "#contact", current: false },
+  { name: "Contact us", href: "/contact-us", current: false },
 ];
 
 function classNames(...classes: string[]) {

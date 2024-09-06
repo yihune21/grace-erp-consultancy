@@ -5,11 +5,17 @@ const Hero = () => {
     <div className="relative px-6 lg:px-8">
       <div className="mx-auto max-w-2xl sm:py-4 lg:py-6">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Announcing our next round of program training.{" "}
-            <a href="/training" className="font-semibold text-indigo-600">
-              <span className="absolute inset-0" aria-hidden="true"></span>
-              Read more <span aria-hidden="true">&rarr;</span>
+          <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
+            Announcing our odoo ERP SaaS Service.{" "}
+            <a
+              href="/SaaS-service"
+              className="ml-2 relative inline-flex items-center font-semibold text-white hover:underline"
+            >
+              <span className="absolute inset-0 " aria-hidden="true"></span>
+              <p className="para">Read more</p>{" "}
+              <span className="ml-1" aria-hidden="true">
+                &rarr;
+              </span>
             </a>
           </div>
         </div>
@@ -22,7 +28,9 @@ const Hero = () => {
             Choosing GraceERP Consultancy for your ERP system implementation
             comes with a range of benefits. Our experience and expertise in Odoo
             ERP implementation are first to none, Ensuring that your business
-            gets the best possible results.
+            gets the best possible results.Additionally, our team of experts is
+            committed to providing you with the support you need to make the
+            most of your investment in ERP Software.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
