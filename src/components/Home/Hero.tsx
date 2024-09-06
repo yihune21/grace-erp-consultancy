@@ -1,5 +1,5 @@
 import "./Hero.css";
-
+import odooLogo from "../../assets/odoo_logo.png";
 const Hero = () => {
   return (
     <div className="relative px-6 lg:px-8">
@@ -41,6 +41,15 @@ const Hero = () => {
             </a>
           </div>
         </div>
+      </div>
+      {/* odoo logo */}
+      {/* Right Side (Odoo Logo) */}
+      <div className="mt-8 sm:mt-0 sm:w-1/3 flex justify-center">
+        <img
+          className="w-40 h-40 object-contain rotate-45"
+          src={odooLogo}
+          alt="Odoo Logo"
+        />
       </div>
     </div>
   );
