@@ -18,7 +18,7 @@ const About = () => {
           software's, and training.
         </p>
         <a
-          href="#"
+          href="/about-us"
           className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
         >
           Explore More

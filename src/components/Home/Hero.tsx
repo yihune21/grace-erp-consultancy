@@ -7,14 +7,14 @@ const Hero = () => {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Announcing our next round of program training.{" "}
-            <a href="#" className="font-semibold text-indigo-600">
+            <a href="/training" className="font-semibold text-indigo-600">
               <span className="absolute inset-0" aria-hidden="true"></span>
               Read more <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </div>
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             GraceERP Consultancy: Your Trusted ERP Implementer and Business
             Consultant
           </h2>
@@ -39,4 +39,3 @@ const Hero = () => {
 };
 
 export default Hero;
-// TODO:redirect it to trianing page

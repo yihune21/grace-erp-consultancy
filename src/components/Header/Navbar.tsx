@@ -10,6 +10,7 @@ import logo from "../../assets/logo.png";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
+  { name: "About us", href: "/about-us", current: false },
   {
     name: "Services",
     href: "#",
@@ -35,10 +36,8 @@ const navigation = [
       { name: "SaaS Modality and pricing", href: "#saas-pricing" },
     ],
   },
-  { name: "Training program", href: "#training", current: false },
-  { name: "Expertise", href: "#expertise", current: false },
-  { name: "Happy clients", href: "#clients", current: false },
-  { name: "About us", href: "#about", current: false },
+  { name: "Expertise", href: "/expertise", current: false },
+  { name: "Happy clients", href: "/happy-clients", current: false },
   { name: "Contact us", href: "#contact", current: false },
 ];
 
