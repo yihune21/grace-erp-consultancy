@@ -1,77 +1,103 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
-
-const features = [
-  {
-    name: "Push to deploy",
-    description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: "SSL certificates",
-    description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
-  },
-  {
-    name: "Simple queues",
-    description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ArrowPathIcon,
-  },
-  {
-    name: "Advanced security",
-    description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
-  },
-];
-
-function CompanyOverview() {
+const CompanyOverview = () => {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+    <div className="bg-white">
+      {/* Company Overview Header */}
+      <div className="bg-orange-500 py-10">
+        <div className="container mx-auto px-6">
+          <h1 className="text-white text-4xl font-bold">COMPANY OVERVIEW</h1>
+        </div>
+      </div>
+
+      {/* Mission and Vision */}
+      <div className="flex flex-col sm:flex-row items-center justify-center space-y-8 sm:space-y-0 sm:space-x-8 py-10 px-6">
+        <div className="bg-white shadow-lg rounded-lg p-6 sm:w-1/2 hover:scale-105 transition-transform duration-500 ">
+          <h2 className="text-xl font-bold">MISSION:</h2>
+          <p className="mt-2 text-gray-700">
+            To deliver comprehensive, scalable, and innovative ERP solutions
+            that enable businesses to streamline their operations, enhance
+            efficiency, and make data-driven decisions.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <feature.icon
-                      aria-hidden="true"
-                      className="h-6 w-6 text-white"
-                    />
+        <div
+          className="bg-white shadow-lg rounded-lg p-6 sm:w-1/2
+        hover:scale-105 transition-transform duration-500
+        "
+        >
+          <h2 className="text-xl font-bold">VISION:</h2>
+          <p className="mt-2 text-gray-700">
+            To revolutionize business operations by providing cutting-edge ERP
+            solutions that empower organizations to optimize their processes,
+            drive growth, and achieve unparalleled success in the digital era.
+          </p>
+        </div>
+      </div>
+
+      {/* Service Section */}
+      <div className="bg-blue-900 text-white py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-10">Service</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white text-gray-900 rounded-lg p-6 shadow-lg
+                hover:scale-105 transition-transform duration-500
+                "
+              >
+                <div className="flex items-center mb-4">
+                  <div className="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center">
+                    {service.number}
                   </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
-                  {feature.description}
-                </dd>
+                  <h3 className="ml-4 text-xl font-bold">{service.title}</h3>
+                </div>
+                <p className="text-gray-700">{service.description}</p>
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+// Sample service data to display in the Service section
+const services = [
+  {
+    number: "01",
+    title: "ERP Implementation",
+    description:
+      "Implementation of the ERP system, including project planning, system configuration, data migration, and user training.",
+  },
+  {
+    number: "02",
+    title: "Customization and Configuration",
+    description:
+      "Offer customization services to tailor the ERP software to the specific needs and processes of the client’s business.",
+  },
+  {
+    number: "03",
+    title: "System Integration",
+    description:
+      "Integrating the ERP system with existing or new applications to ensure seamless data flow across the organization.",
+  },
+  {
+    number: "04",
+    title: "Consulting and Advisory Services",
+    description:
+      "Provide consulting services to guide businesses in selecting the right ERP solution and assessing their processes.",
+  },
+  {
+    number: "05",
+    title: "Training and Support",
+    description:
+      "Offer ongoing technical support and maintenance services to address any issues and provide software updates.",
+  },
+  {
+    number: "06",
+    title: "System Upgrades and Enhancements",
+    description:
+      "Help businesses stay up to date by offering system upgrades, improving performance, and ensuring compatibility with the latest technologies.",
+  },
+];
 
 export default CompanyOverview;

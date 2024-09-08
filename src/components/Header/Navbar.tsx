@@ -6,7 +6,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-removebg-preview.png";
 
 const navigation = [
   { name: "Home", href: "#", current: true },

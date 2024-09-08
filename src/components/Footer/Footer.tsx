@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.png";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -31,6 +33,9 @@ const Footer = () => {
                 <FaXTwitter />
               </a>
               <a href="#" className="hover:text-gray-200">
+                <BiLogoLinkedinSquare />
+              </a>
+              <a href="#" className="hover:text-gray-200">
                 <FaGithub />
               </a>
               <a href="#" className="hover:text-gray-200">
@@ -46,22 +51,17 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-200">
-                    Marketing
+                    ERP implementation
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-200">
-                    Analytics
+                    SaaS Service
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-200">
-                    Commerce
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Insights
+                    Functional Training
                   </a>
                 </li>
               </ul>
@@ -74,25 +74,12 @@ const Footer = () => {
                     Pricing
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Guides
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    API Status
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-gray-200 font-semibold mb-4">Company</h3>
+              <h3 className="text-gray-200 font-semibold mb-4">
+                GraceERP Consultancy
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-gray-200">
@@ -101,39 +88,20 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-200">
-                    Blog
+                    Contact
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-gray-200">
-                    Jobs
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Press
+                    Customers
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-gray-200 font-semibold mb-4">Legal</h3>
+              <h3 className="text-gray-200 font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Claim
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Privacy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-200">
-                    Terms
-                  </a>
-                </li>
+                <li>Phone: +251-991133434/+251-925210595</li>
               </ul>
             </div>
           </div>
