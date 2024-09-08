@@ -9,11 +9,11 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import logo from "../../assets/logo-removebg-preview.png";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
+  { name: "Home", href: "/home", current: true },
   { name: "About us", href: "/about-us", current: false },
   {
     name: "Services",
-    href: "#",
+    href: "",
     current: false,
     hasDropdown: true,
     dropdownItems: [
