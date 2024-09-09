@@ -1,5 +1,5 @@
 import saas from "../../assets/saas.png";
-import odooSaaS from "../../assets/odoo_saas.jpg";
+import odooSaaS from "../../assets/saas_odoo.jpg";
 const SaaS = () => {
   return (
     <>
@@ -35,7 +35,7 @@ const SaaS = () => {
           database. Let’s explore more about the Odoo feature.
         </p>
       </div>
-      <div className="flex justify-center w-full mt-8">
+      <div className="flex justify-center w-full mt-8 shadow-lg hover:scale-105 transition-transform duration-500">
         <img
           className="w-full max-w-2xl h-auto rounded-lg shadow-lg object-cover"
           src={odooSaaS}
