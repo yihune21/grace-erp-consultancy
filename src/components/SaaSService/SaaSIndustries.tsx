@@ -5,7 +5,7 @@ const SaaSIndustries = () => {
       <div className="px-4 py-12 md:px-24 lg:px-32">
         <div className="text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
-            SaaSIndustries
+            SaaS Industries
           </h1>
           <p className="mt-6 text-lg sm:text-xl lg:text-2xl leading-relaxed text-gray-700 font-bold">
             Are you a Wholesaler (B2B), Retailer (B2C), or Service Provider?
