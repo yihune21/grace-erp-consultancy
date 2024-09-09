@@ -30,6 +30,18 @@ const CompanyOverview = () => {
             drive growth, and achieve unparalleled success in the digital era.
           </p>
         </div>
+        <div
+          className="bg-white shadow-lg rounded-lg p-6 sm:w-1/2
+        hover:scale-105 transition-transform duration-500
+        "
+        >
+          <h2 className="text-xl font-bold">OUR VALUES:</h2>
+          <ul className="mt-2 text-gray-700">
+            <li>Seasoned experts</li>
+            <li> Effective support and follow up</li>
+            <li> Free trial period</li>
+          </ul>
+        </div>
       </div>
 
       {/* Service Section */}

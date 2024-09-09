@@ -3,6 +3,8 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import { IoIosPeople } from "react-icons/io";
+import { BiSupport } from "react-icons/bi";
 import erp from "../../assets/erp.jpg";
 
 function Content() {
@@ -93,7 +95,7 @@ function Content() {
                   />
                   <span className="text-justify">
                     <strong className="font-semibold text-gray-900">
-                      Push to deploy.
+                      Leading the Way with Innovative ERP Solutions.
                     </strong>{" "}
                     As a leading ERP consultancy in Ethiopia, we stay abreast of
                     the latest industry trends, best practices, and
@@ -107,29 +109,32 @@ function Content() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon
+                  <IoIosPeople
                     aria-hidden="true"
                     className="mt-1 h-5 w-5 flex-none text-indigo-600"
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      SSL certificates.
+                      Our team of experts
                     </strong>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    is ready to assess your unique business needs and recommend
+                    tailored ERP solutions that will help you manage everything
+                    from finance and inventory to human resources and customer
+                    relationships. Whether you're a growing startup or an
+                    established enterprise, GraceERP Consultancy will deliver
+                    the right ERP system to help you thrive.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon
+                  <BiSupport
                     aria-hidden="true"
                     className="mt-1 h-5 w-5 flex-none text-indigo-600"
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
-                      Database backups.
+                      Support.
                     </strong>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    <br /> Effective support and follow up.
                   </span>
                 </li>
               </ul>
@@ -144,15 +149,15 @@ function Content() {
                 landscape and achieve sustainable growth.
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                No server? No problem.
+                No ERP System? No problem – We're Here to Help!
               </h2>
               <p className="mt-6">
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+                At GraceERP Consultancy, we understand that navigating the
+                complex world of ERP systems can be overwhelming, especially if
+                your business is operating without one. But don't worry—no ERP?
+                No problem! We're here to guide you every step of the way,
+                helping you streamline your processes, improve efficiency, and
+                set your business up for long-term success.
               </p>
             </div>
           </div>

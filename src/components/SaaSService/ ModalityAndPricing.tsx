@@ -94,7 +94,7 @@ const ModalityAndPricing = () => {
         </div>
       </section>
       {/* Pricing section */}
-      <div className="flex w-full h-40 bg-orange-500 text-white mb-4 justify-center items-center">
+      <div className="flex w-full h-40 bg-orange-500 text-white  justify-center items-center">
         <h1 className="text-4xl">Pricing</h1>
       </div>
       <section id="pricing" className="bg-blue-900 py-16">

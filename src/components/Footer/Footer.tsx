@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-removebg-preview.png";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
