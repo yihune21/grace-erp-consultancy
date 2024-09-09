@@ -1,7 +1,7 @@
 import logo from "../../assets/logo-removebg-preview.png";
-import { FaFacebook, FaXTwitter } from "react-icons/fa6";
-import { FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaTelegram, FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -22,23 +22,27 @@ const Footer = () => {
             </div>
             {/* Social Icons */}
             <div className="flex space-x-4">
-              {/* Replace "#" with actual links */}
-              <a href="#" className="hover:text-gray-200">
-                <FaFacebook />
+              <a href="https://t.me/grace_erp" target="_blank">
+                <FaTelegram />
               </a>
-              <a href="#" className="hover:text-gray-200">
-                <FaInstagram />
-              </a>
-              <a href="#" className="hover:text-gray-200">
-                <FaXTwitter />
-              </a>
-              <a href="#" className="hover:text-gray-200">
+              <a
+                href="https://www.linkedin.com/company/graceerp-consultancy/"
+                target="_blank"
+                className="hover:text-gray-200"
+              >
                 <BiLogoLinkedinSquare />
               </a>
-              <a href="#" className="hover:text-gray-200">
-                <FaGithub />
+              <a
+                href="mailto:contact@grace-erp-consultancy.com"
+                className="hover:text-gray-200"
+              >
+                <MdEmail />
               </a>
-              <a href="#" className="hover:text-gray-200">
+              <a
+                href="http://www.youtube.com/@GraceERPConsultancy"
+                target="_blank"
+                className="hover:text-gray-200"
+              >
                 <FaYoutube />
               </a>
             </div>
