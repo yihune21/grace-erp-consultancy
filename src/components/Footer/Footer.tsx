@@ -70,7 +70,10 @@ const Footer = () => {
               <h3 className="text-gray-200 font-semibold mb-4">Support</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a
+                    href="/SaaS-service#pricing"
+                    className="hover:text-gray-200"
+                  >
                     Pricing
                   </a>
                 </li>
@@ -109,7 +112,13 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-gray-800 pt-6 text-center">
-          <p>© {year} GraceERP Consultancy, PLC. All rights reserved.</p>
+          <p>
+            © {year}{" "}
+            <a className="text-orange-500 " href="/home">
+              GraceERP Consultancy PLC
+            </a>
+            . All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

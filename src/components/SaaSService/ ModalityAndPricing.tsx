@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../About/Testimonials.css"; // Custom styles
+import "../About/Testimonials.css";
 
 const modalities = [
   {
@@ -29,8 +29,13 @@ const modalities = [
   {
     name: "Custom",
     role: "Request Quotation",
-    image: "/mnt/data/mod.png", // Image uploaded by the user
-    modules: ["Request a custom quotation based on your business needs."],
+    modules: [
+      "All Modules",
+      "Multi-company ",
+      "Full Customization ",
+      "End-to-End modules integration ",
+      "6 months to 1-year support",
+    ],
   },
 ];
 
@@ -82,15 +87,6 @@ const ModalityAndPricing = () => {
                       </p>
                     )}
                   </blockquote>
-                  {modality.image && (
-                    <figcaption className="mt-10">
-                      <img
-                        alt={modality.name}
-                        src={modality.image}
-                        className="mx-auto h-40 w-40 rounded-lg"
-                      />
-                    </figcaption>
-                  )}
                 </figure>
               </div>
             ))}
@@ -101,7 +97,7 @@ const ModalityAndPricing = () => {
       <div className="flex w-full h-40 bg-orange-500 text-white mb-4 justify-center items-center">
         <h1 className="text-4xl">Pricing</h1>
       </div>
-      <section className="bg-blue-900 py-16">
+      <section id="pricing" className="bg-blue-900 py-16">
         <div className="text-center mb-12">
           <h1 className="text-yellow-400 text-4xl sm:text-5xl font-bold mb-4">
             ODOO ERP SaaS Service
@@ -164,6 +160,7 @@ const ModalityAndPricing = () => {
             <h3 className="text-3xl font-bold mb-4">Request a Quotation</h3>
             <ul className="space-y-3">
               <li>✔️ 10 days free trial</li>
+              <li>✔️ All modules</li>
               <li>✔️ Full ERP Implementation</li>
               <li>✔️ End-to-End Integration</li>
               <li>✔️ Unlimited users</li>
