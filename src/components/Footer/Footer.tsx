@@ -108,6 +108,7 @@ const Footer = () => {
             <div>
               <h3 className="text-gray-200 font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2">
+                <li>Address:Addis Ababa, Ethiopia</li>
                 <li>Phone: +251-991133434/+251-925210595</li>
               </ul>
             </div>
