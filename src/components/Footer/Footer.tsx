@@ -50,17 +50,17 @@ const Footer = () => {
               <h3 className="text-gray-200 font-semibold mb-4">Solutions</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/erp-implementation" className="hover:text-gray-200">
                     ERP implementation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/SaaS-service" className="hover:text-gray-200">
                     SaaS Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/training" className="hover:text-gray-200">
                     Functional Training
                   </a>
                 </li>
@@ -82,17 +82,17 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/about-us" className="hover:text-gray-200">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/contact-us" className="hover:text-gray-200">
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-200">
+                  <a href="/happy-clients" className="hover:text-gray-200">
                     Customers
                   </a>
                 </li>

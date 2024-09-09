@@ -19,10 +19,10 @@ const navigation = [
     dropdownItems: [
       {
         name: "ERP implementation",
-        href: "#erp-implementation",
+        href: "/erp-implementation",
       },
       { name: "SaaS service", href: "/SaaS-service" },
-      { name: "Odoo Training Programs", href: "#odoo-training" },
+      { name: "Odoo Training Programs", href: "/training" },
     ],
   },
   { name: "Expertise", href: "/expertise", current: false },

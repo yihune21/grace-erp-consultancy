@@ -38,7 +38,6 @@ const Customers = () => {
           <img src={tamra} alt="Tamra's company logo" />
         </div>
       </div>
-      {/* Client Testimonials Section */}
     </div>
   );
 };
