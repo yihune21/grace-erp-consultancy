@@ -1,8 +1,8 @@
 import bgImg from "../../assets/workWithAs.avif";
 
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
+  { name: "SaaS", href: "/SaaS-service" },
+  { name: "Training program", href: "/training" },
   { name: "Our values", href: "/about-us#values" },
   { name: "Meet our leadership", href: "/about-us#leaders" },
 ];
