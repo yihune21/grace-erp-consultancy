@@ -51,6 +51,7 @@ const ContactForm = () => {
                 name="firstName"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 required
+                placeholder="First Name"
               />
             </div>
             <div>
@@ -66,6 +67,7 @@ const ContactForm = () => {
                 name="lastName"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 required
+                placeholder="Last Name"
               />
             </div>
           </div>
@@ -82,6 +84,7 @@ const ContactForm = () => {
               name="email"
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               required
+              placeholder="e.g,untitled@gmail.com"
             />
           </div>
           <div>
@@ -97,6 +100,7 @@ const ContactForm = () => {
               name="phone"
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               required
+              placeholder="Phone Number"
             />
           </div>
           <div>
@@ -113,6 +117,7 @@ const ContactForm = () => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               required
               minLength={20}
+              placeholder="Write your message here"
             ></textarea>
           </div>
           <div>
