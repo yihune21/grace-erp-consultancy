@@ -12,6 +12,7 @@ const MainRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<LandingPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/training" element={<TrainingPage />} />

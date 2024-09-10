@@ -1,5 +1,4 @@
 import React from "react";
-
 interface ExpertiseCardProps {
   title: string;
   description: string;
@@ -67,6 +66,18 @@ const Expertise: React.FC = () => {
               description={area.description}
             />
           ))}
+        </div>
+
+        {/* Download Button Section */}
+        <div className="text-center mt-12">
+          <a
+            href="../../assets/Expertise.docx"
+            download
+            className="inline-block bg-orange-600 text-white py-3 px-6 rounded-md font-semibold transition-all duration-300 shadow-lg hover:scale-105 transition-transform duration-500"
+            target="_blank"
+          >
+            Download for More Information
+          </a>
         </div>
       </div>
     </div>
