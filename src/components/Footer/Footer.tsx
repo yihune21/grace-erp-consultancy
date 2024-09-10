@@ -15,7 +15,9 @@ const Footer = () => {
             <div className="flex flex-col items-start mb-4">
               {/* Add your logo */}
               <img className="rounded-full w-10 h-10 mb-4" src={logo} alt="" />
-              <p className="text-gray-200">Empowering Your Potential </p>
+              <p className="text-gray-200">
+                Empowering Your Business Potential{" "}
+              </p>
             </div>
             {/* Social Icons */}
             <div className="flex space-x-4">
