@@ -1,8 +1,4 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import { CloudArrowUpIcon } from "@heroicons/react/20/solid";
 import { IoIosPeople } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
 import erp from "../../assets/erp.jpg";
