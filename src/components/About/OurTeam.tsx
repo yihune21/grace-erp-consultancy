@@ -49,8 +49,10 @@ function OurTeam() {
             Meet our leadership
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
+            Our team of experts is ready to assess your unique business needs
+            and recommend tailored ERP solutions that will help you manage
+            everything from finance and inventory to human resources and
+            customer relationships.{" "}
           </p>
         </div>
         <ul

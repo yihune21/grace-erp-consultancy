@@ -1,7 +1,7 @@
 import About from "../components/About/About";
 import Feature from "../components/About/Feature";
 import Customers from "../components/About/Customers";
-import Testimonials from "../components/About/Testimonials";
+// import Testimonials from "../components/About/Testimonials";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
 import Hero from "../components/Home/Hero";
@@ -16,7 +16,7 @@ const LandingPage = () => {
       <WorkWithUs />
       <Feature />
       <Customers />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );
