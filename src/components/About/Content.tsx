@@ -1,7 +1,7 @@
 import { CloudArrowUpIcon } from "@heroicons/react/20/solid";
 import { IoIosPeople } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
-import erp from "../../assets/logo-01.png";
+import logo from "../../assets/logo-01.png";
 
 function Content() {
   return (
@@ -31,9 +31,9 @@ function Content() {
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
-            alt=""
-            src={erp}
-            className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            alt="Company Logo "
+            src={logo}
+            className="w-full h-full object-cover max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 "
           />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
