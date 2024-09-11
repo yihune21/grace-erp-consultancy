@@ -16,7 +16,7 @@ function Content() {
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 GraceERP Consultancy
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700 text-justify">
+              <p className="mt-6 leading-7 text-gray-700 text-justify">
                 GraceERP Consultancy is a registered Private Limited Company
                 headquartered in Addis Ababa, Ethiopia. We pride ourselves on
                 being a trusted local partner for businesses seeking to optimize
@@ -116,7 +116,7 @@ function Content() {
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                 No ERP System? No problem – We're Here to Help!
               </h2>
-              <p className="mt-6">
+              <p className="mt-6 justify-center">
                 At GraceERP Consultancy, we understand that navigating the
                 complex world of ERP systems can be overwhelming, especially if
                 your business is operating without one. But don't worry—no ERP?

@@ -1,8 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaCheckCircle } from "react-icons/fa";
 import "../About/Testimonials.css";
 
+// Modality data
 const modalities = [
   {
     name: "Basic",
@@ -31,9 +33,9 @@ const modalities = [
     role: "Request Quotation",
     modules: [
       "All Modules",
-      "Multi-company ",
-      "Full Customization ",
-      "End-to-End modules integration ",
+      "Multi-company",
+      "Full Customization",
+      "End-to-End modules integration",
       "6 months to 1-year support",
     ],
   },
@@ -60,7 +62,7 @@ const SubscriptionAndPlan = () => {
         </h1>
       </div>
       {/* Pricing section */}
-      <div className="flex w-full h-40 bg-orange-500 text-white  justify-center items-center">
+      <div className="flex w-full h-40 bg-orange-500 text-white justify-center items-center">
         <h1 className="text-4xl">Subscription</h1>
       </div>
       <section id="pricing" className="bg-blue-900 py-16">
@@ -144,28 +146,32 @@ const SubscriptionAndPlan = () => {
       </div>
 
       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+        <div className="mx-auto max-w-4xl">
           <Slider {...settings}>
             {modalities.map((modality, index) => (
-              <div key={index} className="text-center">
-                <figure className="mt-10">
-                  <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-                    <h2 className="text-2xl mb-4">{modality.name} Plan</h2>
-                    {modality.modules.length > 1 ? (
-                      <ul className="grid grid-cols-2 gap-x-8 gap-y-4 justify-center mx-auto text-left w-3/4">
-                        {modality.modules.map((module, idx) => (
-                          <li key={idx} className="text-lg text-gray-700 mb-2">
-                            {module}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="text-lg text-gray-700">
-                        {modality.modules[0]}
-                      </p>
-                    )}
-                  </blockquote>
-                </figure>
+              <div
+                key={index}
+                className="text-center p-6 bg-gray-100 rounded-lg shadow-lg"
+              >
+                <h2 className="text-2xl font-semibold mb-4">
+                  {modality.name} Plan
+                </h2>
+                <p className="text-lg font-semibold mb-4">{modality.role}</p>
+                {modality.modules.length > 1 ? (
+                  <ul className="list-disc list-inside text-left mx-auto w-3/4">
+                    {modality.modules.map((module, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center mb-2 text-gray-700"
+                      >
+                        <FaCheckCircle className="text-green-500 mr-2" />
+                        {module}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-lg text-gray-700">{modality.modules[0]}</p>
+                )}
               </div>
             ))}
           </Slider>
