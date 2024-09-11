@@ -15,6 +15,12 @@ const SaaS = () => {
               <div className="py-12">
                 {/* Section: Key Benefits */}
                 <div className="mb-12">
+                  <p className="mb-4">
+                    Are you afraid of complex software implementation and costly
+                    IT maintenance? GraceERP Consultancy offers Odoo as a SaaS
+                    (Software as a Service) a hassle-free solution for
+                    businesses of all sizes.
+                  </p>
                   <h2 className="text-2xl font-bold text-indigo-600 mb-6">
                     Key Benefits of Odoo SaaS
                   </h2>

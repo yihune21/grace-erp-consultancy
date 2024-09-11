@@ -1,8 +1,8 @@
 import Content from "../components/About/Content";
 import CompanyOverview from "../components/About/CompanyOverview";
-import OurTeam from "../components/About/OurTeam";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
+import FounderStatement from "../components/About/FounderStatement";
 
 const AboutUsPage = () => {
   return (
@@ -16,7 +16,7 @@ const AboutUsPage = () => {
         <CompanyOverview />
       </section>
       <section id="leaders">
-        <OurTeam />
+        <FounderStatement />
       </section>
       <Footer />
     </>

@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12">
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="justify-left text-left text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
             Our company boasts a proven track record of successful ERP
             implementations, having helped numerous organizations navigate the
             complexities of streamlining their business processes. We bring

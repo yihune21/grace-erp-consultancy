@@ -108,8 +108,12 @@ const Footer = () => {
                     Addis Ababa, Ethiopia
                   </p>
                 </li>
-                <li>Phone: +251-991133434 / +251-925210595</li>
-                <li>Email: contact@grace-erp-consultancy.com</li>
+                <li className="text-nowrap">
+                  Phone: +251-991133434 / +251-925210595
+                </li>
+                <li className="text-nowrap">
+                  Email: contact@grace-erp-consultancy.com
+                </li>
               </ul>
             </div>
           </div>
