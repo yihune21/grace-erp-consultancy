@@ -13,6 +13,7 @@ const ContactForm = () => {
             We're here to help. Contact us for any inquiries or support.
           </p>
 
+          {/* Contact Details */}
           <div className="space-y-2">
             <div className="flex items-center">
               <FaLocationDot className="w-5 h-5 mr-2 text-gray-600" />
@@ -22,16 +23,31 @@ const ContactForm = () => {
               </span>
             </div>
             <div className="flex items-center">
-              <FaPhoneAlt />
-              <span className="ml-2"> +251-991133434/+251-925210595</span>
+              <FaPhoneAlt className="w-5 h-5 mr-2 text-gray-600" />
+              <span className="ml-2"> +251-991133434 / +251-925210595</span>
             </div>
             <div className="flex items-center">
-              <MdEmail />
+              <MdEmail className="w-5 h-5 mr-2 text-gray-600" />
               <span className="ml-2">contact@grace-erp-consultancy.com</span>
             </div>
           </div>
+
+          {/* Embedded Google Maps iframe */}
+          <div className="mt-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.485774440788!2d38.81324247225163!3d9.01937289104155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85aadb1fcbb5%3A0x6cb53978a44a801a!2sGraceERP%20Consultancy!5e0!3m2!1sen!2set!4v1726088524015!5m2!1sen!2set"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Company Location"
+            ></iframe>
+          </div>
         </div>
 
+        {/* Contact Form */}
         <form
           action="https://formspree.io/f/xgvwkojq"
           method="POST"
