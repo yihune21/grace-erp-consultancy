@@ -1,5 +1,5 @@
 import Testimonials from "../components/About/Testimonials";
-import Projects from "../components/ERPImplementation/Projects";
+import Projects from "../components/HappyClients/Projects";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
 

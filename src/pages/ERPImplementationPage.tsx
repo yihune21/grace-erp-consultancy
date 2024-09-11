@@ -1,4 +1,5 @@
 import ERPImplementation from "../components/ERPImplementation/ERPImplementation";
+import Services from "../components/ERPImplementation/Services";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
 
@@ -12,6 +13,7 @@ const ERPImplementationPage = () => {
         </h1>
       </div>
       <ERPImplementation />
+      <Services />
       <Footer />
     </>
   );
