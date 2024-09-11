@@ -1,15 +1,9 @@
-import saas from "../../assets/saas.png";
 import odooSaaS from "../../assets/saas_odoo.jpg";
 const SaaS = () => {
   return (
     <>
       <div className="px-4 py-12 md:px-24 lg:px-32">
         <div className="flex md:flex-row items-center">
-          <img
-            className="shadow-lg hover:scale-105 transition-transform duration-500 hover:mr-2"
-            src={saas}
-            alt="SaaS Icon"
-          />
           <h1 className="text-4xl sm:text-5xl lg:text-5xl  text-gray-800 text-left mb-6 animate-fade-in">
             About Odoo SaaS
           </h1>

@@ -22,16 +22,17 @@ const Customers = () => {
       </div>
 
       {/* Logo Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3  gap-8 mt-12 mx-auto max-w-7xl justify-items-center">
-        {/* Replace with actual logos */}
-        <div className=" p-4 rounded-lg hover:scale-105 transition-transform duration-500">
-          <img src={royal} alt="Royal Family's company logo" />
-        </div>
-        <div className="p-4 rounded-lg hover:scale-105 transition-transform duration-500">
-          <img src={teleport} alt="Teleport's company logo" />
-        </div>
-        <div className=" p-4 rounded-lg hover:scale-105 transition-transform duration-500">
-          <img src={tamra} alt="Tamra's company logo" />
+      <div className="overflow-hidden max-w-7xl mx-auto bg-gray-200">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-12 justify-items-center animate-slideLeft">
+          <div className="p-4 rounded-lg">
+            <img src={royal} alt="Royal Family's company logo" />
+          </div>
+          <div className="p-4 rounded-lg">
+            <img src={teleport} alt="Teleport's company logo" />
+          </div>
+          <div className="p-4 rounded-lg">
+            <img src={tamra} alt="Tamra's company logo" />
+          </div>
         </div>
       </div>
     </div>

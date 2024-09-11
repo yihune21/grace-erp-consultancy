@@ -1,6 +1,6 @@
 import "./Hero.css";
-import odooLogo from "../../assets/logo_1.png";
-
+import odooLogo from "../../assets/odoo_logo.png";
+import logo from "../../assets/logo-01.png";
 const Hero = () => {
   return (
     <div className="relative px-6 lg:px-8">
@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="mx-auto max-w-2xl sm:py-4 lg:py-6">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
-              Announcing our odoo ERP SaaS Service.{" "}
+              Announcing our Odoo ERP SaaS Service.{" "}
               <a
                 href="/SaaS-service"
                 className="ml-2 relative inline-flex items-center font-semibold text-white hover:underline"
@@ -21,7 +21,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="text-center">
+          <div className="text-left">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               GraceERP Consultancy: Your Trusted ERP Implementer and Business
               Consultant
@@ -44,15 +44,22 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* odoo logo */}
-        <div className="mt-8 sm:mt-0 sm:w-1/3 flex justify-start items-center">
-          <img
-            className="w-60 h-60 sm:w-48 sm:h-48 object-contain transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-[360deg]"
-            src={odooLogo}
-            alt="Odoo Logo"
-          />
+
+        {/* Sliding images container */}
+        <div className="relative sm:w-1/3 flex flex-col mt-8 sm:mt-0">
+          <div className="overflow-hidden w-full">
+            <div className="flex flex-col animate-slideLeft">
+              <img
+                className="w-60 h-60 sm:w-48 sm:h-48 object-contain"
+                src={odooLogo}
+                alt="Odoo Logo"
+              />
+              <img src={logo} alt="Company Logo" />
+            </div>
+          </div>
         </div>
       </div>
+
       {/* About odoo */}
       <div className="flex flex-col md:flex-row items-center justify-center min-h-screen  p-6 md:p-12">
         {/* Text Section */}

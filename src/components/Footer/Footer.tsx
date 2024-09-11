@@ -10,51 +10,52 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-400 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between">
-          {/* Left section */}
-          <div className="mb-8 md:mb-0">
-            <div className="flex flex-col items-start mb-4">
-              {/* Add your logo */}
-              <img className="rounded-full w-10 h-10 mb-4" src={logo} alt="" />
-              <p className="text-gray-200">
-                Empowering Your Business Potential{" "}
-              </p>
+          {/* Left section: Logo, Text, and Social Icons */}
+          <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+            {/* Logo with background and shadow */}
+            <div className="p-2 bg-white rounded-full shadow-lg mb-4">
+              <img className="w-5 h-5" src={logo} alt="Company logo" />
             </div>
+            <p className="text-gray-200 text-center md:text-left mb-4">
+              Empowering Your Business Potential
+            </p>
             {/* Social Icons */}
             <div className="flex space-x-4">
               <a href="https://t.me/grace_erp" target="_blank">
-                <FaTelegram />
+                <FaTelegram className="text-gray-400 hover:text-gray-200" />
               </a>
               <a
                 href="https://www.linkedin.com/company/graceerp-consultancy/"
                 target="_blank"
                 className="hover:text-gray-200"
               >
-                <BiLogoLinkedinSquare />
+                <BiLogoLinkedinSquare className="text-gray-400 hover:text-gray-200" />
               </a>
               <a
                 href="mailto:contact@grace-erp-consultancy.com"
                 className="hover:text-gray-200"
               >
-                <MdEmail />
+                <MdEmail className="text-gray-400 hover:text-gray-200" />
               </a>
               <a
                 href="http://www.youtube.com/@GraceERPConsultancy"
                 target="_blank"
                 className="hover:text-gray-200"
               >
-                <FaYoutube />
+                <FaYoutube className="text-gray-400 hover:text-gray-200" />
               </a>
             </div>
           </div>
 
           {/* Right sections */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+            {/* Solutions Section */}
             <div>
               <h3 className="text-gray-200 font-semibold mb-4">Solutions</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="/erp-implementation" className="hover:text-gray-200">
-                    ERP implementation
+                    ERP Implementation
                   </a>
                 </li>
                 <li>
@@ -69,19 +70,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-gray-200 font-semibold mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="/SaaS-service#pricing"
-                    className="hover:text-gray-200"
-                  >
-                    Pricing
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+            {/* GraceERP Consultancy Section */}
             <div>
               <h3 className="text-gray-200 font-semibold mb-4">
                 GraceERP Consultancy
@@ -89,26 +79,37 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a href="/about-us" className="hover:text-gray-200">
-                    About
+                    About Us
                   </a>
                 </li>
                 <li>
                   <a href="/contact-us" className="hover:text-gray-200">
-                    Contact
+                    Contact Us
                   </a>
                 </li>
                 <li>
                   <a href="/happy-clients" className="hover:text-gray-200">
-                    Customers
+                    Happy Clients
                   </a>
                 </li>
               </ul>
             </div>
+
+            {/* Contact Info Section */}
             <div>
               <h3 className="text-gray-200 font-semibold mb-4">Contact Info</h3>
               <ul className="space-y-2">
-                <li>Address:Addis Ababa, Ethiopia</li>
-                <li>Phone: +251-991133434/+251-925210595</li>
+                <li>
+                  <p className="text-sm">
+                    Address: G&B Building, 2nd Floor, Office 203,
+                    <br />
+                    200m from Century Mall to Gurd Shola,
+                    <br />
+                    Addis Ababa, Ethiopia
+                  </p>
+                </li>
+                <li>Phone: +251-991133434 / +251-925210595</li>
+                <li>Email: contact@grace-erp-consultancy.com</li>
               </ul>
             </div>
           </div>

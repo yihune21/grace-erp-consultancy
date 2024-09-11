@@ -39,7 +39,7 @@ const modalities = [
   },
 ];
 
-const ModalityAndPricing = () => {
+const SubscriptionAndPlan = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -56,51 +56,17 @@ const ModalityAndPricing = () => {
     <>
       <div className="px-4 py-12 md:px-24 lg:px-32 text-left">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl text-gray-800 mb-6">
-          Modality And Pricing
+          Subscription And Plan
         </h1>
       </div>
-
-      {/* Modalities section */}
-      <div className="flex w-full h-40 bg-orange-500 text-white mb-4 justify-center items-center">
-        <h1 className="text-4xl">Modalities</h1>
-      </div>
-
-      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <Slider {...settings}>
-            {modalities.map((modality, index) => (
-              <div key={index} className="text-center">
-                <figure className="mt-10">
-                  <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-                    <h2 className="text-2xl mb-4">{modality.name} Modality</h2>
-                    {modality.modules.length > 1 ? (
-                      <ul className="grid grid-cols-2 gap-x-8 gap-y-4 justify-center mx-auto text-left w-3/4">
-                        {modality.modules.map((module, idx) => (
-                          <li key={idx} className="text-lg text-gray-700 mb-2">
-                            {module}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="text-lg text-gray-700">
-                        {modality.modules[0]}
-                      </p>
-                    )}
-                  </blockquote>
-                </figure>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </section>
       {/* Pricing section */}
       <div className="flex w-full h-40 bg-orange-500 text-white  justify-center items-center">
-        <h1 className="text-4xl">Pricing</h1>
+        <h1 className="text-4xl">Subscription</h1>
       </div>
       <section id="pricing" className="bg-blue-900 py-16">
         <div className="text-center mb-12">
           <h1 className="text-yellow-400 text-4xl sm:text-5xl font-bold mb-4">
-            ODOO ERP SaaS Service
+            ODOO ERP SaaS Subscription Plan
           </h1>
           <p className="text-white text-xl">Choose Your Subscription Plan</p>
           <p className="text-white mt-2">
@@ -172,6 +138,39 @@ const ModalityAndPricing = () => {
           </div>
         </div>
       </section>
+      {/* Modalities section */}
+      <div className="flex w-full h-40 bg-orange-500 text-white mb-4 justify-center items-center">
+        <h1 className="text-4xl">Modules Available</h1>
+      </div>
+
+      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+          <Slider {...settings}>
+            {modalities.map((modality, index) => (
+              <div key={index} className="text-center">
+                <figure className="mt-10">
+                  <blockquote className="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+                    <h2 className="text-2xl mb-4">{modality.name} Plan</h2>
+                    {modality.modules.length > 1 ? (
+                      <ul className="grid grid-cols-2 gap-x-8 gap-y-4 justify-center mx-auto text-left w-3/4">
+                        {modality.modules.map((module, idx) => (
+                          <li key={idx} className="text-lg text-gray-700 mb-2">
+                            {module}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-lg text-gray-700">
+                        {modality.modules[0]}
+                      </p>
+                    )}
+                  </blockquote>
+                </figure>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
     </>
   );
 };
@@ -200,4 +199,4 @@ function CustomNextArrow(props: any) {
   );
 }
 
-export default ModalityAndPricing;
+export default SubscriptionAndPlan;

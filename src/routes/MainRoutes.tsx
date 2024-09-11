@@ -7,10 +7,13 @@ import ContactUsPage from "../pages/ContactUsPage";
 import ERPImplementationPage from "../pages/ERPImplementationPage";
 import HappyClientsPage from "../pages/HappyClientsPage";
 import TrainingPage from "../pages/TrainingPage";
+import ScrollToTop from "../components/shared/ScrollToTop";
 
 const MainRoutes = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<LandingPage />} />

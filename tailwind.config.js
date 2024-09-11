@@ -10,9 +10,14 @@ export default {
           "75%": { transform: "translateY(-10px)" },
           "100%": { transform: "translateY(0)" },
         },
+        slideLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "fade-bounce": "fade-bounce 2s ease-in-out infinite",
+        slideLeft: "slideLeft 15s linear infinite",
       },
     },
   },

@@ -18,7 +18,7 @@ const ContactForm = () => {
               <FaLocationDot className="w-5 h-5 mr-2 text-gray-600" />
               <span className="ml-2">
                 Address: G&B building 2nd floor office number 203, 200m from
-                Century mall gurd shola
+                Century mall to Gurd Shola
               </span>
             </div>
             <div className="flex items-center">

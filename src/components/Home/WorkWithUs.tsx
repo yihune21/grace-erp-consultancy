@@ -3,8 +3,8 @@ import bgImg from "../../assets/workWithAs.avif";
 const links = [
   { name: "SaaS", href: "/SaaS-service" },
   { name: "Training program", href: "/training" },
-  { name: "Our values", href: "/about-us#values" },
-  { name: "Meet our leadership", href: "/about-us#leaders" },
+  { name: "Internship program", href: "#" },
+  { name: "Out Source", href: "#" },
 ];
 const stats = [
   { name: "Offices worldwide", value: "1" },

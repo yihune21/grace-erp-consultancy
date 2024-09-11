@@ -1,3 +1,5 @@
+import logo from "../../assets/logo-01.png";
+
 const ERPImplementation = () => {
   return (
     <>
@@ -17,7 +19,7 @@ const ERPImplementation = () => {
             <div className="flex justify-center mb-4">
               <span className="text-orange-400 text-6xl">&ldquo;</span>
               <img
-                src="your-logo-url-here"
+                src={logo}
                 alt="GraceERP Consultancy"
                 className="h-12 ml-2"
               />
@@ -26,14 +28,7 @@ const ERPImplementation = () => {
             <h2 className="text-black font-bold text-3xl lg:text-4xl mb-4">
               A successful ERP implementation is a journey, not a destination.
             </h2>
-            <p className="text-gray-500">Have a Productive Week!</p>
           </div>
-
-          {/* <!-- Footer with Author --> */}
-          <div className="text-center mt-8">
-            <p className="text-black font-bold">@ErmiasTegegen</p>
-          </div>
-
           {/* <!-- Bottom Quote --> */}
           <div className="flex justify-center mt-4">
             <span className="text-orange-400 text-6xl">&rdquo;</span>

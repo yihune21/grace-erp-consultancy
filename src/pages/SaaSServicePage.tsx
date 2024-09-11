@@ -1,8 +1,8 @@
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
-import ModalityAndPricing from "../components/SaaSService/ ModalityAndPricing";
 import SaaS from "../components/SaaSService/SaaS";
 import SaaSIndustries from "../components/SaaSService/SaaSIndustries";
+import SubscriptionAndPlan from "../components/SaaSService/SubscriptionAndPlan";
 
 const SaaSServicePage = () => {
   return (
@@ -13,7 +13,7 @@ const SaaSServicePage = () => {
       </div>
       <SaaS />
       <SaaSIndustries />
-      <ModalityAndPricing />
+      <SubscriptionAndPlan />
       <Footer />
     </>
   );

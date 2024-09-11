@@ -6,28 +6,25 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo-removebg-preview.png";
 
 const navigation = [
-  { name: "Home", href: "/home", current: true },
-  { name: "About us", href: "/about-us", current: false },
+  { name: "Home", href: "/home", hasDropdown: false },
   {
     name: "Services",
     href: "#",
-    current: false,
     hasDropdown: true,
     dropdownItems: [
-      {
-        name: "ERP implementation",
-        href: "/erp-implementation",
-      },
+      { name: "ERP implementation", href: "/erp-implementation" },
       { name: "SaaS service", href: "/SaaS-service" },
       { name: "Odoo Training Programs", href: "/training" },
     ],
   },
-  { name: "Expertise", href: "/expertise", current: false },
-  { name: "Happy clients", href: "/happy-clients", current: false },
-  { name: "Contact us", href: "/contact-us", current: false },
+  { name: "Expertise", href: "/expertise", hasDropdown: false },
+  { name: "Happy clients", href: "/happy-clients", hasDropdown: false },
+  { name: "About us", href: "/about-us", hasDropdown: false },
+  { name: "Contact us", href: "/contact-us", hasDropdown: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -35,23 +32,24 @@ function classNames(...classes: string[]) {
 }
 
 function Navbar() {
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const location = useLocation(); // To detect the current path
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const handleDropdownClick = (name: any) => {
+  const handleDropdownClick = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
-  const handleNavItemClick = (close: any) => {
+  const handleNavItemClick = () => {
     setOpenDropdown(null);
-    close();
   };
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50">
-      {({ open, close }) => (
+    <Disclosure as="nav" className="bg-white sticky top-0 z-50">
+      {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
+              {/* Mobile menu button */}
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -63,32 +61,41 @@ function Navbar() {
                 </DisclosureButton>
               </div>
 
+              {/* Logo and Navigation */}
               <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+                {/* Logo */}
                 <div className="flex flex-shrink-0 items-center">
-                  <a href="/home">
-                    <img className="h-8 w-auto" src={logo} alt="Your Company" />
-                  </a>
+                  <Link to="/home">
+                    <img
+                      className="h-10 w-auto"
+                      src={logo}
+                      alt="Your Company"
+                    />
+                  </Link>
                 </div>
+
+                {/* Desktop Menu */}
                 <div className="hidden md:ml-6 md:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <div key={item.name} className="relative group">
-                        <a
-                          href={item.href}
+                        <Link
+                          to={item.href}
                           className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-sm font-medium flex items-center"
+                            location.pathname === item.href
+                              ? "bg-indigo-600 text-white"
+                              : "text-gray-800 hover:bg-indigo-600 hover:text-white",
+                            "rounded-md px-3 py-2 text-sm font-semibold flex items-center transition duration-300"
                           )}
+                          onClick={() => handleNavItemClick()}
                         >
                           {item.name}
                           {item.hasDropdown && (
                             <span className="ml-1 inline-block">
-                              <FaChevronDown className="h-3 w-3" />
+                              <FaChevronDown className="h-4 w-4 text-gray-300 group-hover:text-white transition duration-300" />
                             </span>
                           )}
-                        </a>
+                        </Link>
                         {item.hasDropdown && (
                           <div className="absolute left-0 top-full mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <div
@@ -97,15 +104,16 @@ function Navbar() {
                               aria-orientation="vertical"
                               aria-labelledby="options-menu"
                             >
-                              {item.dropdownItems.map((subItem) => (
-                                <a
+                              {item.dropdownItems?.map((subItem) => (
+                                <Link
                                   key={subItem.name}
-                                  href={subItem.href}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                  to={subItem.href}
+                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-indigo-600 transition duration-200"
                                   role="menuitem"
+                                  onClick={() => handleNavItemClick()}
                                 >
                                   {subItem.name}
-                                </a>
+                                </Link>
                               ))}
                             </div>
                           </div>
@@ -118,13 +126,14 @@ function Navbar() {
             </div>
           </div>
 
+          {/* Mobile Menu */}
           <DisclosurePanel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) =>
                 item.hasDropdown ? (
                   <div key={item.name}>
                     <button
-                      className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                      className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
                       onClick={() => handleDropdownClick(item.name)}
                     >
                       {item.name}
@@ -136,33 +145,33 @@ function Navbar() {
                     </button>
                     {openDropdown === item.name && (
                       <div className="pl-4 space-y-1">
-                        {item.dropdownItems.map((subItem) => (
-                          <a
+                        {item.dropdownItems?.map((subItem) => (
+                          <Link
                             key={subItem.name}
-                            href={subItem.href}
-                            className="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                            onClick={() => handleNavItemClick(close)}
+                            to={subItem.href}
+                            className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+                            onClick={() => handleNavItemClick()}
                           >
                             {subItem.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "block rounded-md px-3 py-2 text-base font-medium"
+                      location.pathname === item.href
+                        ? "bg-indigo-600 text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white",
+                      "block rounded-md px-3 py-2 text-base font-medium transition duration-300"
                     )}
-                    onClick={() => handleNavItemClick(close)}
+                    onClick={() => handleNavItemClick()}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )
               )}
             </div>
