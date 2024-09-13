@@ -1,6 +1,8 @@
 import "./Hero.css";
 import odooLogo from "../../assets/odoo_logo.png";
 import logo from "../../assets/logo-01.png";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <div className="relative px-6 lg:px-8 ">
@@ -44,20 +46,36 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        {/* Sliding images container */}{" "}
+        <motion.div
+          className="relative w-full overflow-hidden flex justify-center items-center "
+          animate={{
+            x: ["100%", "0%", "-10%", "-10%"], // Slide from right, show fully, slide off left, pause off-screen
+          }}
+          transition={{
+            duration: 10, // Total animation duration
+            times: [0, 0.25, 0.75, 1], // Control when each stage happens
+            ease: "linear", // Linear motion
+            repeat: Infinity, // Repeat the animation
+            repeatDelay: 2, // Pause after fully sliding off-screen
+          }}
+        >
+          <div className="relative flex flex-col items-center justify-center gap-8">
+            {/* Odoo Logo */}
+            <img
+              className="w-full sm:w-60 md:w-72 lg:w-96 xl:w-1/3 h-auto object-contain"
+              src={odooLogo}
+              alt="Odoo Logo"
+            />
 
-        {/* Sliding images container */}
-        <div className="relative sm:w-1/3 flex flex-col mt-8 sm:mt-0">
-          <div className="overflow-hidden w-full">
-            <div className="flex flex-col lg:animate-slideLeft">
-              <img
-                className="w-60 h-60 sm:w-48 sm:h-48 object-contain"
-                src={odooLogo}
-                alt="Odoo Logo"
-              />
-              <img src={logo} alt="Company Logo" />
-            </div>
+            {/* Company Logo */}
+            <img
+              className="w-full sm:w-60 md:w-72 lg:w-96 xl:w-1/3 h-auto object-contain"
+              src={logo}
+              alt="Company Logo"
+            />
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* About odoo */}
