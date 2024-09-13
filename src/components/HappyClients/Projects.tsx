@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
         name: "Yonas Bogale",
         role: "Managing Director",
       },
-      logo: "src/assets/telePort.png",
+      logo: "/assets/telePort.png",
     },
     {
       name: "Tamra for Social Development Organization (TSD)",
@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
         name: "Biruk Yergalem",
         role: "Executive Director",
       },
-      logo: "src/assets/TAMRA.png",
+      logo: "/assets/TAMRA.png",
     },
     {
       name: "Royal Family Group",
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
         name: "Ahmed Abduletif",
         role: "CEO",
       },
-      logo: "src/assets/royal.png",
+      logo: "/assets/royal.png",
     },
   ];
 
