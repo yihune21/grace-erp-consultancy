@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
           Who We Are
         </h2>
-        <p className="text-base md:text-lg mb-4 md:mb-6">
+        <p className="text-base md:text-lg mb-4 md:mb-6 text-justify">
           GraceERP Consultancy PLC is a registered Private Limited Company
           headquartered in Addis Ababa, Ethiopia. We pride ourselves on being a
           trusted local Odoo implementer to optimize their operations through
