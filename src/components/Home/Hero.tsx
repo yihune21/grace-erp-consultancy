@@ -48,9 +48,9 @@ const Hero = () => {
         {/* Sliding images container */}
         <div className="relative sm:w-1/3 flex flex-col mt-8 sm:mt-0">
           <div className="overflow-hidden w-full">
-            <div className="flex flex-col">
+            <div className="flex flex-col lg:animate-slideLeft">
               <img
-                className="w-60 h-60 sm:w-48 sm:h-48 object-contain rounded-full shadow-lg hover:scale-105 transition-transform duration-500 pl-6"
+                className="w-60 h-60 sm:w-48 sm:h-48 object-contain"
                 src={odooLogo}
                 alt="Odoo Logo"
               />
