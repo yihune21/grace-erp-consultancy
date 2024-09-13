@@ -3,7 +3,7 @@ import odooLogo from "../../assets/odoo_logo.png";
 import logo from "../../assets/logo-01.png";
 const Hero = () => {
   return (
-    <div className="relative px-6 lg:px-8">
+    <div className="relative px-6 lg:px-8 text-justify">
       <div className="flex flex-col md:flex-row items-center">
         <div className="mx-auto max-w-2xl sm:py-4 lg:py-6">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
