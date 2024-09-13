@@ -1,7 +1,7 @@
 // Desc: Customers Section of the About Page
-import royal from "../../assets/royal.png";
-import tamra from "../../assets/TAMRA.png";
-import teleport from "../../assets/telePort.png";
+import royal from "/assets/royal.png";
+import tamra from "/assets/TAMRA.png";
+import teleport from "/assets/telePort.png";
 
 const Customers = () => {
   return (
