@@ -3,7 +3,7 @@ import odooLogo from "../../assets/odoo_logo.png";
 import logo from "../../assets/logo-01.png";
 const Hero = () => {
   return (
-    <div className="relative px-6 lg:px-8 text-justify">
+    <div className="relative px-6 lg:px-8 ">
       <div className="flex flex-col md:flex-row items-center">
         <div className="mx-auto max-w-2xl sm:py-4 lg:py-6">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -26,7 +26,7 @@ const Hero = () => {
               GraceERP Consultancy PLC: Your Trusted ERP Implementer and
               Business Consultant
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
               Choosing GraceERP Consultancy PLC for your ERP system
               implementation comes with a range of benefits. Our experience and
               expertise in Odoo ERP implementation are first to none, Ensuring
@@ -67,7 +67,7 @@ const Hero = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             What is Odoo?
           </h2>
-          <p className="text-base md:text-lg mb-4 md:mb-6">
+          <p className="text-base md:text-lg mb-4 md:mb-6 text-justify">
             <strong>Odoo</strong> is an open-source business management platform
             that offers a comprehensive suite of applications for various
             business functions, including CRM, sales, inventory, manufacturing,
