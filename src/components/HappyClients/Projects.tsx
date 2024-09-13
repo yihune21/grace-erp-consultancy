@@ -9,6 +9,7 @@ interface Project {
     name: string;
     role: string;
   };
+  logo: string;
 }
 
 interface ProjectCardProps {
@@ -18,6 +19,11 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="p-6 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform duration-500 flex flex-col justify-between h-full">
+      <img
+        src={project.logo}
+        alt={`${project.name} logo`}
+        className="w-20 h-20 object-contain mb-4 mx-auto" // Styling for the logo
+      />
       <h3 className="text-xl font-bold text-indigo-600 mb-4">{project.name}</h3>
       <p className="text-gray-700 mb-4">
         <span className="font-bold">Project Goal: </span>
@@ -40,9 +46,10 @@ const Projects: React.FC = () => {
       description:
         "GraceERP Consultancy played a great role in delivering Odoo ERP system (Version 15) for Teleport Technologies. The system brought significant cost savings, improved efficiency, centralized employee management (HRMS), and enhanced customer service.",
       contactPerson: {
-        name: "Yonas Alemayew",
+        name: "Yonas Bogale",
         role: "Managing Director",
       },
+      logo: "src/assets/telePort.png",
     },
     {
       name: "Tamra for Social Development Organization (TSD)",
@@ -53,6 +60,7 @@ const Projects: React.FC = () => {
         name: "Biruk Yergalem",
         role: "Executive Director",
       },
+      logo: "src/assets/TAMRA.png",
     },
     {
       name: "Royal Family Group",
@@ -63,6 +71,7 @@ const Projects: React.FC = () => {
         name: "Ahmed Abduletif",
         role: "CEO",
       },
+      logo: "src/assets/royal.png",
     },
   ];
 
@@ -70,7 +79,7 @@ const Projects: React.FC = () => {
     <section className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 text-center">
         <div className="mb-12">
-          <p className="  text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
             Our company boasts a proven track record of successful ERP
             implementations, having helped numerous organizations navigate the
             complexities of streamlining their business processes. We bring

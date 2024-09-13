@@ -41,7 +41,7 @@ function Feature() {
             Everything you need to know about GraceERP Consultancy
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            At GraceERP Consultancy, you’ll collaborate with a team that’s
+            At GraceERP Consultancy PLC, you’ll collaborate with a team that’s
             committed to delivering tailored ERP solutions that empower
             businesses to thrive.
           </p>

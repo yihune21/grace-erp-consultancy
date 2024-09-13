@@ -12,12 +12,13 @@ const AboutUsPage = () => {
         <h1 className="text-6xl">About Us</h1>
       </div>
       <Content />
+      <section id="leader">
+        <FounderStatement />
+      </section>
       <section id="values">
         <CompanyOverview />
       </section>
-      <section id="leaders">
-        <FounderStatement />
-      </section>
+
       <Footer />
     </>
   );

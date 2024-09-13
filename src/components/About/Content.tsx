@@ -40,17 +40,17 @@ function Content() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p className="text-justify">
-                At GraceERP Consultancy, we understand that every business is
-                unique, with specific goals, processes, and challenges. That's
-                why we take a personalized approach to our services, working
-                closely with clients to analyze their business processes,
-                identify gaps, and customize the ERP system to meet their
-                specific requirements. Our deep expertise in ERP solutions,
-                combined with our in-depth knowledge of various industries,
-                allows us to deliver tailored solutions that drive efficiency,
-                productivity, and growth. We are committed to delivering
-                high-quality services and building long-lasting relationships
-                with our clients.
+                At GraceERP Consultancy PLC, we understand that every business
+                is unique, with specific goals, processes, and challenges.
+                That's why we take a personalized approach to our services,
+                working closely with clients to analyze their business
+                processes, identify gaps, and customize the ERP system to meet
+                their specific requirements. Our deep expertise in ERP
+                solutions, combined with our in-depth knowledge of various
+                industries, allows us to deliver tailored solutions that drive
+                efficiency, productivity, and growth. We are committed to
+                delivering high-quality services and building long-lasting
+                relationships with our clients.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
@@ -117,7 +117,7 @@ function Content() {
                 No ERP System? No problem – We're Here to Help!
               </h2>
               <p className="mt-6 justify-center">
-                At GraceERP Consultancy, we understand that navigating the
+                At GraceERP Consultancy PLC, we understand that navigating the
                 complex world of ERP systems can be overwhelming, especially if
                 your business is operating without one. But don't worry—no ERP?
                 No problem! We're here to guide you every step of the way,

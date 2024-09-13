@@ -12,7 +12,7 @@ const ERPImplementation = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header with fade-in effect */}
         <animated.div style={fadeIn}>
-          <h2 className="text-5xl font-bold text-center mb-10 text-purple-600">
+          <h2 className="text-5xl font-bold text-center mb-10 text-orange-600">
             ERP Implementation: Streamlining Business Operations
           </h2>
           <p className="text-center text-lg text-gray-600 mb-12">
@@ -24,7 +24,7 @@ const ERPImplementation = () => {
 
         {/* Implementation Overview Section */}
         <div className="mb-16">
-          <h3 className="text-4xl font-semibold mb-6 text-purple-500">
+          <h3 className="text-4xl font-semibold mb-6 text-orange-500">
             How ERP Implementation Works
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -36,7 +36,7 @@ const ERPImplementation = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform hover:scale-105">
-              <h4 className="text-xl font-semibold mb-2 text-purple-600">
+              <h4 className="text-xl font-semibold mb-2 text-orange-600">
                 Phase 1: Discovery & Planning
               </h4>
               <p className="text-gray-600 leading-relaxed">
@@ -47,7 +47,7 @@ const ERPImplementation = () => {
               </p>
             </div>
             <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform hover:scale-105">
-              <h4 className="text-xl font-semibold mb-2 text-purple-600">
+              <h4 className="text-xl font-semibold mb-2 text-orange-600">
                 Phase 2: Design & Configuration
               </h4>
               <p className="text-gray-600 leading-relaxed">
@@ -58,7 +58,7 @@ const ERPImplementation = () => {
               </p>
             </div>
             <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform hover:scale-105">
-              <h4 className="text-xl font-semibold mb-2 text-purple-600">
+              <h4 className="text-xl font-semibold mb-2 text-orange-600">
                 Phase 3: Training & Deployment
               </h4>
               <p className="text-gray-600 leading-relaxed">
@@ -73,7 +73,7 @@ const ERPImplementation = () => {
 
         {/* Finance & Accounting Management Module */}
         <div className="mb-16">
-          <h3 className="text-4xl font-semibold mb-6 text-purple-500">
+          <h3 className="text-4xl font-semibold mb-6 text-orange-500">
             Finance & Accounting Management
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -102,7 +102,7 @@ const ERPImplementation = () => {
 
         {/* Human Resource Management Module */}
         <div className="mb-16">
-          <h3 className="text-4xl font-semibold mb-6 text-purple-500">
+          <h3 className="text-4xl font-semibold mb-6 text-orange-500">
             Human Resource Management (HRM)
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -130,7 +130,7 @@ const ERPImplementation = () => {
 
         {/* Supply Chain Management (SCM) Module */}
         <div className="mb-16">
-          <h3 className="text-4xl font-semibold mb-6 text-purple-500">
+          <h3 className="text-4xl font-semibold mb-6 text-orange-500">
             Supply Chain Management (SCM)
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -151,7 +151,7 @@ const ERPImplementation = () => {
 
         {/* Customer Relationship Management (CRM) Module */}
         <div className="mb-16">
-          <h3 className="text-4xl font-semibold mb-6 text-purple-500">
+          <h3 className="text-4xl font-semibold mb-6 text-orange-500">
             Customer Relationship Management (CRM)
           </h3>
           <p className="text-gray-700 leading-relaxed text-lg mb-6">

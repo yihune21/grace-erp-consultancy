@@ -17,7 +17,7 @@ const Customers = () => {
           className="mt-6 bg-blue-600 px-6 py-2 rounded-full text-white"
           href="/happy-clients"
         >
-          More Customers
+          Hear their story
         </a>
       </div>
 

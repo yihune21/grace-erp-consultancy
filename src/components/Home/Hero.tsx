@@ -23,16 +23,16 @@ const Hero = () => {
           </div>
           <div className="text-left">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              GraceERP Consultancy: Your Trusted ERP Implementer and Business
-              Consultant
+              GraceERP Consultancy PLC: Your Trusted ERP Implementer and
+              Business Consultant
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Choosing GraceERP Consultancy for your ERP system implementation
-              comes with a range of benefits. Our experience and expertise in
-              Odoo ERP implementation are first to none, Ensuring that your
-              business gets the best possible results. Additionally, our team of
-              experts is committed to providing you with the support you need to
-              make the most of your investment in ERP Software.
+              Choosing GraceERP Consultancy PLC for your ERP system
+              implementation comes with a range of benefits. Our experience and
+              expertise in Odoo ERP implementation are first to none, Ensuring
+              that your business gets the best possible results. Additionally,
+              our team of experts is committed to providing you with the support
+              you need to make the most of your investment in ERP Software.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

@@ -24,6 +24,11 @@ const Training = () => {
     "src/assets/18.jpg",
     "src/assets/19.jpg",
     "src/assets/20.jpg",
+    "src/assets/21.jpg",
+    "src/assets/22.jpg",
+    "src/assets/23.jpg",
+    "src/assets/24.jpg",
+    "src/assets/25.jpg",
   ];
 
   const settings = {
@@ -76,12 +81,17 @@ const Training = () => {
           GraceERP Consultancy’s Odoo Training Program
         </h2>
         <p className="text-lg text-gray-600 mb-6">
-          GraceERP recently concluded its inaugural Odoo Functional Training
-          Program, a two-month intensive course designed to equip participants
-          with the skills needed to navigate and optimize Odoo. As a pioneer in
-          Odoo implementation and training in Ethiopia, GraceERP is committed to
-          fostering a vibrant Odoo community and driving business growth through
-          technology.
+          GraceERP Consultancy PLC recently concluded its inaugural Odoo
+          Functional Training Program, a two-month intensive course designed to
+          equip participants with the skills needed to navigate and optimize
+          Odoo, the world's leading ERP system.
+        </p>
+        <p className="text-lg text-gray-600 mb-6">
+          As a pioneer in Odoo implementation and training in Ethiopia, GraceERP
+          is committed to fostering a vibrant Odoo community and driving
+          business growth through technology. Our training programs are tailored
+          to meet the evolving needs of the market, providing professionals with
+          the knowledge and expertise they need to excel in their roles.
         </p>
         <p className="text-lg text-gray-600 mb-6">
           Whether you're looking to enhance your Odoo skills or start a new
@@ -109,7 +119,7 @@ const Training = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-purple-600 py-12">
+      <section className="bg-orange-600 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-white text-4xl font-semibold mb-4">
             Join Our Next Training Program
@@ -123,7 +133,7 @@ const Training = () => {
             href="#"
             className="bg-white text-purple-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-50 transition-colors"
           >
-            Sign Up Today
+            Coming soon
           </a>
         </div>
       </section>

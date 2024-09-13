@@ -9,12 +9,12 @@ const About = () => {
           Who We Are
         </h2>
         <p className="text-base md:text-lg mb-4 md:mb-6">
-          GraceERP Consultancy is a registered Private Limited Company
+          GraceERP Consultancy PLC is a registered Private Limited Company
           headquartered in Addis Ababa, Ethiopia. We pride ourselves on being a
-          trusted local partner for businesses seeking to optimize their
-          operations through the implementation of robust ERP systems. Our team
-          consists of highly skilled professionals with extensive experience in
-          ERP system customization, implementation, integration with third party
+          trusted local Odoo implementer to optimize their operations through
+          the implementation of robust ERP systems. Our team consists of highly
+          skilled professionals with extensive experience in ERP system
+          customization, implementation, integration with third party
           software's, and training.
         </p>
         <a

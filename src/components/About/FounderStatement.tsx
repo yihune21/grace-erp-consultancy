@@ -1,4 +1,5 @@
-import ceoImage from "../../assets/ermi.jpg"; // Make sure the correct path is used
+import ceoImage from "../../assets/ermi.avif"; // Make sure the correct path is used
+import "./Founder.css";
 
 const FounderStatement = () => {
   return (
@@ -6,19 +7,15 @@ const FounderStatement = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {/* Image section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
-          <img
-            src={ceoImage}
-            alt="Mr. Ermiyas Tegegn"
-            className="rounded-full h-80 w-80 object-cover shadow-lg"
-          />
+          <img src={ceoImage} alt="Mr. Ermiyas Tegegn" className="ceo-image " />
         </div>
 
         {/* Text section */}
-        <div className="w-full lg:w-1/2 lg:pl-12">
+        <div className="w-full lg:w-1/2 lg:pl-12 text-justify">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Meet Our Founder
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-4">
+          <p className="text-lg text-gray-600 leading-relaxed mb-4 ">
             I’m Ermias Tegegn Retta, the founder of GraceERP Consultancy PLC.
             With extensive experience in ERP system implementation, particularly
             with Odoo ERP, I have dedicated my career to driving innovation and
@@ -36,7 +33,8 @@ const FounderStatement = () => {
             growth for our clients and the communities we serve.
           </p>
           <p className="text-blue-600 font-semibold text-lg mt-6">
-            Mr. Ermiyas Tegegn
+            Ermias Tegegn Retta <br /> CEO and Founder <br />
+            GraceERP Consultancy PLC
           </p>
         </div>
       </div>

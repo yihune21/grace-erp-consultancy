@@ -40,7 +40,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <animated.div style={fadeIn}>
-          <h2 className="text-5xl font-bold text-center mb-10 text-purple-600">
+          <h2 className="text-5xl font-bold text-center mb-10 text-[#334155]">
             Our Expertise
           </h2>
           <p className="text-center text-lg text-gray-600 mb-12">
@@ -56,7 +56,7 @@ const Services = () => {
               key={index}
               className="bg-white p-6 shadow-lg rounded-lg transform transition-transform hover:scale-105"
             >
-              <h3 className="text-xl font-semibold mb-4 text-purple-500">
+              <h3 className="text-xl font-semibold mb-4 text-[#334155]">
                 {service.title}
               </h3>
               <p className="text-gray-700 leading-relaxed">
