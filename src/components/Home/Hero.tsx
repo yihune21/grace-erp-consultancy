@@ -21,7 +21,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="text-left">
+          <div>
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               GraceERP Consultancy PLC: Your Trusted ERP Implementer and
               Business Consultant
