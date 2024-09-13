@@ -48,9 +48,9 @@ const Hero = () => {
         {/* Sliding images container */}
         <div className="relative sm:w-1/3 flex flex-col mt-8 sm:mt-0">
           <div className="overflow-hidden w-full">
-            <div className="flex flex-col lg:animate-slideLeft">
+            <div className="flex flex-col">
               <img
-                className="w-60 h-60 sm:w-48 sm:h-48 object-contain"
+                className="w-60 h-60 sm:w-48 sm:h-48 object-contain rounded-full shadow-lg hover:scale-105 transition-transform duration-500 pl-6"
                 src={odooLogo}
                 alt="Odoo Logo"
               />
@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
 
       {/* About odoo */}
-      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen  p-6 md:p-12">
+      <div className="flex flex-col md:flex-row items-center justify-center p-6 md:p-12">
         {/* Text Section */}
         <div className="w-full md:w-1/2  mb-8 md:mb-0 md:pr-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
@@ -95,7 +95,7 @@ const Hero = () => {
             autoPlay
             muted
             loop
-            className=" rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+            className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           >
             <source
               src="https://download.odoocdn.com/videos/odoo_com/video_homepage.webm"
@@ -108,6 +108,7 @@ const Hero = () => {
           </video>
         </div>
       </div>
+
       {/* About odoo */}
     </div>
   );
