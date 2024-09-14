@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative px-6 lg:px-8 ">
+    <div className="relative px-6 lg:px-8">
       <div className="flex flex-col md:flex-row items-center">
-        <div className="mx-auto max-w-2xl sm:py-4 lg:py-6 justify-center">
+        {/* First Content Section */}
+        <div className="mx-auto lg:pl-12 max-w-2xl sm:py-4 lg:py-6 justify-center md:pr-8">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
               Announcing our Odoo ERP SaaS Service.{" "}
@@ -46,18 +47,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* Sliding images container */}{" "}
+        {/* Sliding images container */}
         <motion.div
-          className="relative w-full overflow-hidden flex justify-center items-center "
+          className="relative w-full overflow-hidden flex justify-center items-center"
           animate={{
-            x: ["100%", "0%", "-10%", "-10%"], // Slide from right, show fully, slide off left, pause off-screen
+            x: ["100%", "0%", "-10%", "-10%"],
           }}
           transition={{
-            duration: 10, // Total animation duration
-            times: [0, 0.25, 0.75, 1], // Control when each stage happens
-            ease: "linear", // Linear motion
-            repeat: Infinity, // Repeat the animation
-            repeatDelay: 2, // Pause after fully sliding off-screen
+            duration: 10,
+            times: [0, 0.25, 0.75, 1],
+            ease: "linear",
+            repeat: Infinity,
+            repeatDelay: 2,
           }}
         >
           <div className="relative flex flex-col items-center justify-center gap-8">
@@ -81,7 +82,7 @@ const Hero = () => {
       {/* About odoo */}
       <div className="flex flex-col md:flex-row items-center justify-center p-6 md:p-12">
         {/* Text Section */}
-        <div className="w-full md:w-1/2  mb-8 md:mb-0 md:pr-8">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
             What is Odoo?
           </h2>
@@ -126,8 +127,6 @@ const Hero = () => {
           </video>
         </div>
       </div>
-
-      {/* About odoo */}
     </div>
   );
 };
