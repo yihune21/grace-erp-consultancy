@@ -49,7 +49,7 @@ const ContactForm = () => {
 
         {/* Contact Form */}
         <form
-          action="https://formspree.io/f/xgvwkojq"
+          action="https://formspree.io/f/xkgwavwv"
           method="POST"
           className="space-y-4"
         >
