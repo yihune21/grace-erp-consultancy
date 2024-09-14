@@ -4,7 +4,7 @@ const links = [
   { name: "SaaS", href: "/SaaS-service" },
   { name: "Training program", href: "/training" },
   { name: "Internship program", href: "#" },
-  { name: "GraceERP Consultancy PLC Outsourcing", href: "#" },
+  { name: " Outsourcing", href: "#" },
 ];
 const stats = [
   { name: "Offices worldwide", value: "1" },
@@ -51,7 +51,7 @@ function WorkWithUs() {
             Work with us
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Join the Future of ERP Solutions{" "}
+            Join the Future of ERP Solutions with{" "}
             <strong>GraceERP Consultancy PLC</strong>.
           </p>
         </div>

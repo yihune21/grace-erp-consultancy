@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="relative px-6 lg:px-8 ">
       <div className="flex flex-col md:flex-row items-center">
-        <div className="mx-auto max-w-2xl sm:py-4 lg:py-6">
+        <div className="mx-auto max-w-2xl sm:py-4 lg:py-6 justify-center">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
               Announcing our Odoo ERP SaaS Service.{" "}

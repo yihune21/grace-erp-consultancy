@@ -32,7 +32,7 @@ const FounderStatement = () => {
             collaboration and integrity are the keys to achieving sustainable
             growth for our clients and the communities we serve.
           </p>
-          <p className="text-blue-600 font-semibold text-lg mt-6">
+          <p className="text-blue-600 font-semibold text-lg mt-6 text-right">
             Ermias Tegegn Retta <br /> CEO and Founder <br />
             GraceERP Consultancy PLC
           </p>

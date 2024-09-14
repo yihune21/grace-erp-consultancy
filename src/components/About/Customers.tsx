@@ -2,7 +2,6 @@
 import royal from "/assets/royal.png";
 import tamra from "/assets/TAMRA.png";
 import teleport from "/assets/telePort.png";
-import { motion } from "framer-motion";
 
 const Customers = () => {
   return (
@@ -25,31 +24,17 @@ const Customers = () => {
       {/* Logo Grid */}
 
       <div className="overflow-hidden max-w-7xl mx-auto bg-gray-200">
-        <motion.div
-          className="relative w-full overflow-hidden flex justify-center items-center "
-          animate={{
-            x: ["100%", "-50%", "-50%"], // Slide from right, show fully, slide off left, pause off-screen
-          }}
-          transition={{
-            duration: 10, // Total animation duration
-            times: [0, 0.25, 0.75, 1], // Control when each stage happens
-            ease: "linear", // Linear motion
-            repeat: Infinity, // Repeat the animation
-            repeatDelay: 2, // Pause after fully sliding off-screen
-          }}
-        >
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-12 justify-items-center ">
-            <div className="p-4 rounded-lg">
-              <img src={royal} alt="Royal Family's company logo" />
-            </div>
-            <div className="p-4 rounded-lg">
-              <img src={teleport} alt="Teleport's company logo" />
-            </div>
-            <div className="p-4 rounded-lg">
-              <img src={tamra} alt="Tamra's company logo" />
-            </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-12 justify-items-center animate-slideLeft">
+          <div className="p-4 rounded-lg">
+            <img src={royal} alt="Royal Family's company logo" />
           </div>
-        </motion.div>
+          <div className="p-4 rounded-lg">
+            <img src={teleport} alt="Teleport's company logo" />
+          </div>
+          <div className="p-4 rounded-lg">
+            <img src={tamra} alt="Tamra's company logo" />
+          </div>
+        </div>
       </div>
     </div>
   );
