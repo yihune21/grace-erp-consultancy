@@ -109,7 +109,7 @@ const SubscriptionAndPlan = () => {
             </div>
             <h2 className="text-yellow-400 text-xl font-bold mb-4">STANDARD</h2>
             <h3 className="text-3xl font-bold mb-4">10,999 ETB/MONTH</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-8">
               <li>✔️ 10 days free trial</li>
               <li>✔️ 11 modules</li>
               <li>✔️ Unlimited users</li>
@@ -117,9 +117,12 @@ const SubscriptionAndPlan = () => {
               <li>✔️ On-site training</li>
               <li>✔️ 24/7 Support</li>
             </ul>
-            <button className="bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-full mt-6 shadow-lg hover:scale-105 transition-transform duration-500">
+            <a
+              href="http://159.69.219.61:8080/survey/start/3091f26a-3364-4776-a38b-1d73347c9b49"
+              className="cursor-pointer bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-full mt-6 shadow-lg hover:scale-105 transition-transform duration-500"
+            >
               Get Started
-            </button>
+            </a>
           </div>
 
           {/* Custom Plan */}
