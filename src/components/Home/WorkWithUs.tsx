@@ -6,12 +6,12 @@ const links = [
   { name: "Internship program", href: "#" },
   { name: " Outsourcing", href: "#" },
 ];
-const stats = [
-  { name: "Offices worldwide", value: "1" },
-  { name: "Full-time colleagues", value: "10+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
-];
+// const stats = [
+//   { name: "Offices worldwide", value: "1" },
+//   { name: "Full-time colleagues", value: "10+" },
+//   { name: "Hours per week", value: "40" },
+//   { name: "Paid time off", value: "Unlimited" },
+// ];
 
 function WorkWithUs() {
   return (
@@ -63,7 +63,7 @@ function WorkWithUs() {
               </a>
             ))}
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          {/* <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
@@ -74,7 +74,7 @@ function WorkWithUs() {
                 </dd>
               </div>
             ))}
-          </dl>
+          </dl> */}
         </div>
       </div>
     </div>

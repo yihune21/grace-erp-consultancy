@@ -7,7 +7,7 @@ const FounderStatement = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {/* Image section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
-          <img src={ceoImage} alt="Mr. Ermiyas Tegegn" className="ceo-image " />
+          <img src={ceoImage} alt="Mr. Ermiyas Tegegn" className="ceo-image" />
         </div>
 
         {/* Text section */}

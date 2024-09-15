@@ -50,8 +50,6 @@ const SubscriptionAndPlan = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
   };
 
   return (
@@ -102,6 +100,7 @@ const SubscriptionAndPlan = () => {
             </ul>
             <a
               href="http://159.69.219.61:8080/survey/start/3091f26a-3364-4776-a38b-1d73347c9b49"
+              target="_blank"
               className="cursor-pointer bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-full mt-6 shadow-lg hover:scale-105 transition-transform duration-500"
             >
               Get Started
@@ -125,6 +124,7 @@ const SubscriptionAndPlan = () => {
             </ul>
             <a
               href="http://159.69.219.61:8080/survey/start/3091f26a-3364-4776-a38b-1d73347c9b49"
+              target="_blank"
               className="cursor-pointer bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-full mt-6 shadow-lg hover:scale-105 transition-transform duration-500"
             >
               Get Started
@@ -148,6 +148,7 @@ const SubscriptionAndPlan = () => {
             </ul>
             <a
               href="http://159.69.219.61:8080/survey/start/3091f26a-3364-4776-a38b-1d73347c9b49"
+              target="_blank"
               className="cursor-pointer bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-full mt-6 shadow-lg hover:scale-105 transition-transform duration-500"
             >
               Get Started
@@ -195,29 +196,5 @@ const SubscriptionAndPlan = () => {
     </>
   );
 };
-
-function CustomPrevArrow(props: any) {
-  const { onClick } = props;
-  return (
-    <button
-      className="slick-prev custom-arrow left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-50"
-      onClick={onClick}
-    >
-      ←
-    </button>
-  );
-}
-
-function CustomNextArrow(props: any) {
-  const { onClick } = props;
-  return (
-    <button
-      className="slick-next custom-arrow right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 z-50"
-      onClick={onClick}
-    >
-      →
-    </button>
-  );
-}
 
 export default SubscriptionAndPlan;
