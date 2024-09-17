@@ -61,66 +61,63 @@ function Navbar() {
                 </DisclosureButton>
               </div>
 
-              {/* Logo and Navigation */}
-              <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-                {/* Logo */}
-                <div className="flex flex-shrink-0 items-center">
-                  <Link to="/home">
-                    <img
-                      className="h-10 w-auto"
-                      src={logo}
-                      alt="Your Company"
-                    />
-                  </Link>
-                </div>
+              {/* Logo */}
+              <div className="flex flex-shrink-0 items-center">
+                <Link to="/home">
+                  <img
+                    className="h-16 w-auto" // Increased logo size
+                    src={logo}
+                    alt="Your Company"
+                  />
+                </Link>
+              </div>
 
-                {/* Desktop Menu */}
-                <div className="hidden md:ml-6 md:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <div key={item.name} className="relative group">
-                        <Link
-                          to={item.href}
-                          className={classNames(
-                            location.pathname === item.href
-                              ? "bg-indigo-600 text-white"
-                              : "text-gray-800 hover:bg-indigo-600 hover:text-white",
-                            "rounded-md px-3 py-2 text-sm font-semibold flex items-center transition duration-300"
-                          )}
-                          onClick={() => handleNavItemClick()}
-                        >
-                          {item.name}
-                          {item.hasDropdown && (
-                            <span className="ml-1 inline-block">
-                              <FaChevronDown className="h-4 w-4 text-gray-300 group-hover:text-white transition duration-300" />
-                            </span>
-                          )}
-                        </Link>
-                        {item.hasDropdown && (
-                          <div className="absolute left-0 top-full mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                            <div
-                              className="py-1"
-                              role="menu"
-                              aria-orientation="vertical"
-                              aria-labelledby="options-menu"
-                            >
-                              {item.dropdownItems?.map((subItem) => (
-                                <Link
-                                  key={subItem.name}
-                                  to={subItem.href}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-indigo-600 transition duration-200"
-                                  role="menuitem"
-                                  onClick={() => handleNavItemClick()}
-                                >
-                                  {subItem.name}
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
+              {/* Desktop Menu */}
+              <div className="hidden md:flex md:items-center md:justify-center flex-grow">
+                <div className="flex space-x-4">
+                  {navigation.map((item) => (
+                    <div key={item.name} className="relative group">
+                      <Link
+                        to={item.href}
+                        className={classNames(
+                          location.pathname === item.href
+                            ? "bg-indigo-600 text-white"
+                            : "text-gray-800 hover:bg-indigo-600 hover:text-white",
+                          "rounded-md px-3 py-2 text-sm font-semibold flex items-center transition duration-300"
                         )}
-                      </div>
-                    ))}
-                  </div>
+                        onClick={() => handleNavItemClick()}
+                      >
+                        {item.name}
+                        {item.hasDropdown && (
+                          <span className="ml-1 inline-block">
+                            <FaChevronDown className="h-4 w-4 text-gray-300 group-hover:text-white transition duration-300" />
+                          </span>
+                        )}
+                      </Link>
+                      {item.hasDropdown && (
+                        <div className="absolute left-0 top-full mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                          <div
+                            className="py-1"
+                            role="menu"
+                            aria-orientation="vertical"
+                            aria-labelledby="options-menu"
+                          >
+                            {item.dropdownItems?.map((subItem) => (
+                              <Link
+                                key={subItem.name}
+                                to={subItem.href}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-indigo-600 transition duration-200"
+                                role="menuitem"
+                                onClick={() => handleNavItemClick()}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
