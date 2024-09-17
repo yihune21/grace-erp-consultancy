@@ -6,11 +6,13 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Header/Navbar";
 import Hero from "../components/Home/Hero";
 import WorkWithUs from "../components/Home/WorkWithUs";
+import Home from "../components/Home/Home";
 
 const LandingPage = () => {
   return (
     <>
       <Navbar />
+      <Home />
       <Hero />
       <About />
       <WorkWithUs />

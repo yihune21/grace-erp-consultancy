@@ -17,7 +17,7 @@ export default {
       },
       animation: {
         "fade-bounce": "fade-bounce 2s ease-in-out infinite",
-        slideLeft: "slideLeft 10s linear infinite",
+        slideLeft: "slideLeft 30s linear infinite",
       },
     },
   },

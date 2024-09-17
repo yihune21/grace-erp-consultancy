@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative px-6 lg:px-8">
+    <div className="relative px-6 lg:px-8 ">
       <div className="flex flex-col md:flex-row items-center">
         {/* First Content Section */}
         <div className="mx-auto lg:pl-12 max-w-2xl sm:py-4 lg:py-6 justify-center md:pr-8">
