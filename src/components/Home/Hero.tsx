@@ -9,10 +9,10 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center">
         {/* First Content Section */}
         <div className="mx-auto lg:pl-12 max-w-2xl sm:py-4 lg:py-6">
-          {/* <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             GraceERP Consultancy PLC: Your Trusted ERP Implementer and Business
             Consultant
-          </h2> */}
+          </h2>
           <div className="hidden sm:mb-8 sm:flex sm:justify-center mt-4">
             <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
               Announcing our Odoo ERP SaaS Service.{" "}
