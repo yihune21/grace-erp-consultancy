@@ -62,13 +62,9 @@ function Navbar() {
               </div>
 
               {/* Logo */}
-              <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-shrink-0 items-center justify-center w-full md:w-auto md:justify-start">
                 <Link to="/home">
-                  <img
-                    className="h-16 w-auto" // Increased logo size
-                    src={logo}
-                    alt="Your Company"
-                  />
+                  <img className="h-16 w-auto" src={logo} alt="Your Company" />
                 </Link>
               </div>
 
