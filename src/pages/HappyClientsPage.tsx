@@ -6,7 +6,7 @@ const HappyClientsPage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-[url('/assets/business-people.jpg')] bg-no-repeat bg-cover flex w-fill h-80 text-[#ea580c]  justify-center items-center">
+      <div className="bg-[url('/assets/img_b.png')] bg-no-repeat bg-cover flex w-fill h-80 text-[#0f172a]  justify-center items-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           {" "}
           Happy Clients

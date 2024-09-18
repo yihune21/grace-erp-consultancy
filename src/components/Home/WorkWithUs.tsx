@@ -9,7 +9,7 @@ const links = [
 
 function WorkWithUs() {
   return (
-    <div className="relative isolate overflow-hidden bg-blue-900 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden  py-24 sm:py-32">
       <img
         alt="bunch of people"
         src={bgImg}

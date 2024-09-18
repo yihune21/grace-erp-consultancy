@@ -7,12 +7,13 @@ const ERPImplementationPage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-[url('/assets/erp_imp(1).jpg')]  flex w-full h-80 bg-cover  text-[#ea580c] justify-center items-center mb-0">
+      <div className="bg-[url('/assets/img_b.png')]  flex w-full h-80 bg-no-repeat bg-cover  text-[#0f172a] justify-center items-center mb-0">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           ERP Implementation
         </h1>
       </div>
       <ERPImplementation />
+      text-[#0f172a]
       <Services />
       <Footer />
     </>
