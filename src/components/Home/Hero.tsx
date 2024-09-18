@@ -9,18 +9,17 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center">
         {/* First Content Section */}
         <div className="mx-auto lg:pl-12 max-w-2xl sm:py-4 lg:py-6">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-bold text-center tracking-tight text-gray-900 sm:text-4xl">
             GraceERP Consultancy PLC: Your Trusted ERP Implementer and Business
             Consultant
           </h2>
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center mt-4">
-            <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-6 py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <div className="mb-4 sm:mb-8 flex justify-center mt-4">
+            <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-4 py-2 sm:px-6 sm:py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
               Announcing our Odoo ERP SaaS Service.{" "}
               <a
                 href="/SaaS-service"
                 className="ml-2 relative inline-flex items-center font-semibold text-white hover:underline"
               >
-                <span className="absolute inset-0" aria-hidden="true"></span>
                 <p className="para">Read more</p>{" "}
                 <span className="ml-1" aria-hidden="true">
                   &rarr;
@@ -28,6 +27,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
+
           <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
             Choosing GraceERP Consultancy PLC for your ERP system implementation
             comes with a range of benefits. Our experience and expertise in Odoo
@@ -62,14 +62,14 @@ const Hero = () => {
           <div className="relative flex flex-col items-center justify-center gap-8">
             {/* Company Logo */}
             <img
-              className="w-full sm:w-60 md:w-72 lg:w-96 xl:w-1/3 h-auto object-contain"
+              className="w-72 sm:w-80 lg:w-96 xl:w-[32rem] 2xl:w-[40rem]  object-contain"
               src={logo}
               alt="Company Logo"
             />
 
             {/* Odoo Logo */}
             <img
-              className="w-full sm:w-48 md:w-56 lg:w-72 xl:w-1/4 h-auto object-contain"
+              className="w-16 sm:w-20 md:w-28 lg:w-32 xl:w-1/4 h-auto object-contain"
               src={odooLogo}
               alt="Odoo Logo"
             />
