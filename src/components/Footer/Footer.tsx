@@ -141,6 +141,31 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Visit Demo Section */}
+        <div className="mt-8 flex justify-center">
+          <div className="bg-orange-500 text-white font-semibold px-6 py-4 rounded-md shadow-lg hover:scale-105 transition-transform duration-500 w-96">
+            <a
+              href="https://demo1.grace-erp-consultancy.com"
+              target="_blank"
+              className="flex justify-center items-center hover:text-gray-800 transition-colors duration-300 py-2 text-3xl"
+            >
+              <p>Visit Demo</p>
+              <span className="ml-1" aria-hidden="true">
+                &rarr;
+              </span>
+            </a>
+            <div className="mt-4 text-center">
+              <p className="text-lg font-bold">Demo Login Details:</p>
+              <p className="mt-2">
+                <span className="font-bold">Email:</span> demo
+              </p>
+              <p>
+                <span className="font-bold">Password:</span> demo
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Copyright */}
         <div className="mt-8 border-t border-gray-300 pt-6 text-center">
           <p>
