@@ -3,18 +3,12 @@ import Navbar from "../components/Header/Navbar";
 import SaaS from "../components/SaaSService/SaaS";
 import SaaSIndustries from "../components/SaaSService/SaaSIndustries";
 import SubscriptionAndPlan from "../components/SaaSService/SubscriptionAndPlan";
-import bgImg from "../assets/saass(1).jpg";
 
 const SaaSServicePage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="flex w-fill h-80 bg-gray-800 text-white mb-4 justify-center items-center"
-        style={{
-          backgroundImage: `url(${bgImg})`,
-        }}
-      >
+      <div className="bg-[url('/assets/s.jpg')]  bg-no-repeat bg-cover flex w-fill h-80  text-[#ea580c] mb-4 justify-center items-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           {" "}
           SaaS Service
