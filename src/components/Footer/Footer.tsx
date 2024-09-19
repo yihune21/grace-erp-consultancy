@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="p-4 bg-gray-200 rounded-full shadow-lg mb-4">
               <img className="w-12 h-12" src={logo} alt="Company logo" />
             </div>
-            <p className="slogan text-orange-600 text-xl text-nowrap font-bold text-center lg:text-left mb-4">
+            <p className=" text-orange-600 text-xl  font-bold text-center lg:text-left mb-4">
               Empowering Your Business Potential
             </p>
             <div className="flex space-x-4">
@@ -127,12 +127,8 @@ const Footer = () => {
                   Addis Ababa, Ethiopia
                 </p>
               </li>
-              <li className="contact-info text-nowrap">
-                Phone: +251-991133434 / +251-925210595
-              </li>
-              <li className="contact-info text-nowrap">
-                Email: contact@grace-erp-consultancy.com
-              </li>
+              <li>Phone: +251-991133434 / +251-925210595</li>
+              <li>Email: contact@grace-erp-consultancy.com</li>
             </ul>
           </div>
 
@@ -142,7 +138,7 @@ const Footer = () => {
             <a
               href="https://demo1.grace-erp-consultancy.com"
               target="_blank"
-              className="text-nowrap flex justify-center items-center hover:text-gray-900 transition-colors duration-300 py-2 text-2xl lg:text-3xl"
+              className=" flex justify-center items-center hover:text-gray-900 transition-colors duration-300 py-2 text-2xl lg:text-3xl"
             >
               <p>Demo Site</p>
               <span className="ml-2 text-3xl" aria-hidden="true">
