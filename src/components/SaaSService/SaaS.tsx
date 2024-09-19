@@ -1,5 +1,6 @@
 import odooSaaS from "../../assets/saas_img.jpg";
 import logo from "../../assets/logo-01.png";
+import { Link } from "react-router-dom";
 
 const SaaS = () => {
   return (
@@ -153,12 +154,12 @@ const SaaS = () => {
                 Contact us today to schedule a demo and discover how it can
                 transform your business.
               </p>
-              <a
-                href="/contact-us"
+              <Link
+                to="/contact-us"
                 className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

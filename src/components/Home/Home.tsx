@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa"; // Importing a down arrow icon
 import logo from "../../assets/logo-01.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [showScrollIcon, setShowScrollIcon] = useState(true);
@@ -47,13 +48,13 @@ const Home = () => {
             Providing customized ERP solutions for your business needs.
           </p>
 
-          <a href="/contact-us">
+          <Link to="/contact-us">
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               <button className="bg-orange-600 hover:scale-105 text-white py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out">
                 Contact Us
               </button>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Right Section */}

@@ -2,7 +2,6 @@ import logo from "../../assets/logo-removebg-preview.png";
 import { FaTelegram, FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
-import "./Footer.css";
 
 const Footer = () => {
   const year = new Date().getFullYear();
