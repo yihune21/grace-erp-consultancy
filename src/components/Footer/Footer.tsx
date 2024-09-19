@@ -8,19 +8,17 @@ const Footer = () => {
 
   return (
     <footer className="bg-white text-gray-700 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between">
-          {/* Left section: Logo, Text, and Social Icons */}
-          <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-            {/* Enlarged Logo with background and shadow */}
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          {/* Logo and Social Icons */}
+          <div className="flex flex-col items-center lg:items-start">
             <div className="p-4 bg-gray-200 rounded-full shadow-lg mb-4">
               <img className="w-12 h-12" src={logo} alt="Company logo" />
             </div>
-            <p className="text-gray-700 text-center md:text-left mb-4">
+            <p className="text-gray-700 text-center lg:text-left mb-4">
               Empowering Your Business Potential
             </p>
-            {/* Enlarged Social Icons */}
-            <div className="flex space-x-6">
+            <div className="flex space-x-4">
               <a
                 href="https://t.me/grace_erp"
                 target="_blank"
@@ -51,106 +49,102 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right sections */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            {/* Solutions Section */}
-            <div>
-              <h3 className="text-gray-700 font-semibold mb-4">Solutions</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="/erp-implementation"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    ERP Implementation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/SaaS-service"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    SaaS Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/training"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    Functional Training
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* GraceERP Consultancy Section */}
-            <div>
-              <h3 className="text-gray-700 font-semibold mb-4">
-                GraceERP Consultancy PLC
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="/about-us"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/contact-us"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/happy-clients"
-                    className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900"
-                  >
-                    Happy Clients
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info Section */}
-            <div>
-              <h3 className="text-gray-700 font-semibold mb-4">Contact Info</h3>
-              <ul className="space-y-2">
-                <li>
-                  <p>
-                    Address: G&B Building, 2nd Floor, Office 203,
-                    <br />
-                    200m from Century Mall to Gurd Shola,
-                    <br />
-                    Addis Ababa, Ethiopia
-                  </p>
-                </li>
-                <li className="text-nowrap">
-                  Phone: +251-991133434 / +251-925210595
-                </li>
-                <li className="text-nowrap">
-                  Email: contact@grace-erp-consultancy.com
-                </li>
-              </ul>
-            </div>
+          {/* Solutions Section */}
+          <div>
+            <h3 className="text-gray-700 font-semibold mb-4">Solutions</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/erp-implementation"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  ERP Implementation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/SaaS-service"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  SaaS Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/training"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  Functional Training
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
 
-        {/* Visit Demo Section */}
-        <div className="mt-8 flex justify-center">
-          <div className="bg-orange-500 text-white font-semibold px-6 py-4 rounded-md shadow-lg hover:scale-105 transition-transform duration-500 w-96">
+          {/* GraceERP Consultancy Section */}
+          <div>
+            <h3 className="text-gray-700 font-semibold mb-4">
+              GraceERP Consultancy PLC
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/about-us"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact-us"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/happy-clients"
+                  className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
+                >
+                  Happy Clients
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info Section */}
+          <div>
+            <h3 className="text-gray-700 font-semibold mb-4">Contact Info</h3>
+            <ul className="space-y-2">
+              <li>
+                <p>
+                  Address: G&B Building, 2nd Floor, Office 203,
+                  <br />
+                  200m from Century Mall to Gurd Shola,
+                  <br />
+                  Addis Ababa, Ethiopia
+                </p>
+              </li>
+              <li className="text-nowrap">
+                Phone: +251-991133434 / +251-925210595
+              </li>
+              <li className="text-nowrap">
+                Email: contact@grace-erp-consultancy.com
+              </li>
+            </ul>
+          </div>
+
+          {/* Demo Section */}
+
+          <div className=" bg-indigo-600  text-white font-semibold px-6 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <a
               href="https://demo1.grace-erp-consultancy.com"
               target="_blank"
-              className="flex justify-center items-center hover:text-gray-800 transition-colors duration-300 py-2 text-3xl"
+              className="flex justify-center items-center hover:text-gray-900 transition-colors duration-300 py-2 text-2xl lg:text-3xl"
             >
-              <p>Visit Demo</p>
-              <span className="ml-1" aria-hidden="true">
+              <p>Demo Site</p>
+              <span className="ml-2 text-3xl" aria-hidden="true">
                 &rarr;
               </span>
             </a>
@@ -167,10 +161,10 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 border-t border-gray-300 pt-6 text-center">
+        <div className="mt-12 border-t border-gray-300 pt-6 text-center">
           <p>
             © {year}{" "}
-            <a className="text-blue-600 " href="/home">
+            <a className="text-blue-600 hover:text-blue-800" href="/home">
               GraceERP Consultancy PLC
             </a>
             . All rights reserved.

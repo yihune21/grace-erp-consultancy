@@ -13,7 +13,6 @@ const ERPImplementationPage = () => {
         </h1>
       </div>
       <ERPImplementation />
-      text-[#0f172a]
       <Services />
       <Footer />
     </>
