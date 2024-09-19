@@ -174,7 +174,14 @@ const SubscriptionAndPlan = () => {
                 </h2>
                 <p className="text-lg font-semibold mb-4">{modality.role}</p>
                 {modality.modules.length > 1 ? (
-                  <ul className="list-disc list-inside text-left mx-auto w-3/4">
+                  // Check if the plan is Standard to apply two-column grid layout
+                  <ul
+                    className={`list-disc list-inside text-left mx-auto w-3/4 ${
+                      modality.name === "Standard"
+                        ? "grid grid-cols-1 md:grid-cols-2 gap-x-4"
+                        : ""
+                    }`}
+                  >
                     {modality.modules.map((module, idx) => (
                       <li
                         key={idx}
