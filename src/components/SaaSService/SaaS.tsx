@@ -1,4 +1,4 @@
-import odooSaaS from "../../assets/saas_odoo.jpg";
+import odooSaaS from "../../assets/saas_img.jpg";
 import logo from "../../assets/logo-01.png";
 
 const SaaS = () => {
