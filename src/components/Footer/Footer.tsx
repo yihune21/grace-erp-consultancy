@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="p-4 bg-gray-200 rounded-full shadow-lg mb-4">
               <img className="w-12 h-12" src={logo} alt="Company logo" />
             </div>
-            <p className="text-gray-700 text-center lg:text-left mb-4">
+            <p className="text-orange-600 text-xl text-nowrap font-bold text-center lg:text-left mb-4">
               Empowering Your Business Potential
             </p>
             <div className="flex space-x-4">
