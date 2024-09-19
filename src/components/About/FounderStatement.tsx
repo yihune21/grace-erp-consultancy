@@ -13,7 +13,7 @@ const FounderStatement = () => {
         {/* Text section */}
         <div className="w-full lg:w-1/2 lg:pl-12 text-justify">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Meet Our Founder
+            Meet The Founder
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-4 ">
             I’m Ermias Tegegn Retta, the founder of GraceERP Consultancy PLC.
