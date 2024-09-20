@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bgImg from "../../assets/img_b.png";
 
 const links = [
@@ -52,13 +53,13 @@ function WorkWithUs() {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="hover:text-[#ea580c] transition duration-300"
               >
                 {link.name} <span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
