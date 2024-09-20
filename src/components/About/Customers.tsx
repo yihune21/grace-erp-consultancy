@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import royal from "/assets/royal.png";
 import tamra from "/assets/TAMRA.png";
 import teleport from "/assets/telePort.png";
@@ -12,12 +13,12 @@ const Customers = () => {
         <p className="text-gray-600 mt-2 mb-6">
           Implementation Experience and Success
         </p>
-        <a
+        <Link
           className="mt-6 inline-block bg-blue-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-700 transition duration-300"
-          href="/happy-clients"
+          to="/happy-clients"
         >
           Hear their story
-        </a>
+        </Link>
       </div>
 
       {/* Logo Grid */}
