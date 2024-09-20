@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import graceBrochure from "../../assets/GraceBrochure.png";
 
 const About = () => {
@@ -17,12 +18,12 @@ const About = () => {
           customization, implementation, integration with third party
           software's, and training.
         </p>
-        <a
-          href="/about-us"
+        <Link
+          to="/about-us"
           className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
         >
           Explore More
-        </a>
+        </Link>
       </div>
 
       {/* Image Section */}
