@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 interface ExpertiseCardProps {
   title: string;
   description: string;
@@ -70,12 +71,12 @@ const Expertise: React.FC = () => {
 
         {/* Download Button Section */}
         <div className="text-center mt-12">
-          <a
-            href="/erp-implementation"
+          <Link
+            to="/erp-implementation"
             className="inline-block bg-orange-600 text-white py-3 px-6 rounded-md font-semibold transition-all duration-300 shadow-lg hover:scale-105 transition-transform duration-500"
           >
             Explore More
-          </a>
+          </Link>
         </div>
       </div>
     </div>

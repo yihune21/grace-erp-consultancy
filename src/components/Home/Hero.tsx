@@ -2,6 +2,7 @@ import "./Hero.css";
 import odooLogo from "../../assets/odoo_logo.png";
 import logo from "../../assets/logo-01.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,15 +17,15 @@ const Hero = () => {
           <div className="mb-4 sm:mb-8 flex justify-center mt-4">
             <div className="relative inline-flex items-center rounded-full bg-orange-500 text-white px-4 py-2 sm:px-6 sm:py-2 text-sm leading-6 font-semibold hover:bg-orange-600 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl">
               Announcing our Odoo ERP SaaS Service.{" "}
-              <a
-                href="/SaaS-service"
+              <Link
+                to="/SaaS-service"
                 className="ml-2 relative inline-flex items-center font-semibold text-white hover:underline"
               >
                 <p className="para">Read more</p>{" "}
                 <span className="ml-1" aria-hidden="true">
                   &rarr;
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -37,12 +38,12 @@ const Hero = () => {
             most of your investment in ERP Software.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="/about-us"
+            <Link
+              to="/about-us"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Learn more <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
         {/* Sliding images container */}

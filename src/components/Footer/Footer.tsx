@@ -2,6 +2,7 @@ import logo from "../../assets/logo-removebg-preview.png";
 import { FaTelegram, FaYoutube } from "react-icons/fa";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -54,28 +55,28 @@ const Footer = () => {
             <h3 className="text-gray-700 font-semibold mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/erp-implementation"
+                <Link
+                  to="/erp-implementation"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   ERP Implementation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/SaaS-service"
+                <Link
+                  to="/SaaS-service"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   SaaS Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/training"
+                <Link
+                  to="/training"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   Functional Training
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -87,28 +88,28 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/about-us"
+                <Link
+                  to="/about-us"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact-us"
+                <Link
+                  to="/contact-us"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/happy-clients"
+                <Link
+                  to="/happy-clients"
                   className="hover:bg-gray-100 p-2 rounded-lg hover:text-gray-900 block"
                 >
                   Happy Clients
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -160,9 +161,9 @@ const Footer = () => {
         <div className="mt-12 border-t border-gray-300 pt-6 text-center">
           <p>
             © {year}{" "}
-            <a className="text-blue-600 hover:text-blue-800" href="/home">
+            <Link className="text-blue-600 hover:text-blue-800" to="/">
               GraceERP Consultancy PLC
-            </a>
+            </Link>
             . All rights reserved.
           </p>
         </div>
