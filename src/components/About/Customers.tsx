@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import royal from "/assets/royal.png";
 import tamra from "/assets/TAMRA.png";
 import teleport from "/assets/telePort.png";
-
+import atrafiSolution from "/assets/AtrafiSolution.jpg"
+import credoks from "/assets/Credoks.jpeg"
 const Customers = () => {
   return (
     <div className="bg-gray-100 text-gray-900 py-16 px-8">
@@ -43,6 +44,20 @@ const Customers = () => {
               className="max-w-full h-auto"
               src={tamra}
               alt="Tamra's company logo"
+            />
+          </div>
+          <div className="w-40 sm:w-48 md:w-56 h-auto p-4 rounded-lg flex items-center justify-center bg-white shadow-lg">
+            <img
+              className="max-w-full h-auto"
+              src={atrafiSolution}
+              alt="atrafiSolution's company logo"
+            />
+          </div>
+          <div className="w-40 sm:w-48 md:w-56 h-auto p-4 rounded-lg flex items-center justify-center bg-white shadow-lg">
+            <img
+              className="max-w-full h-auto"
+              src={credoks}
+              alt="credoks's company logo"
             />
           </div>
         </div>
